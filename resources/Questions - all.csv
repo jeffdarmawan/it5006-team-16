@@ -1,0 +1,1025 @@
+questions,group,label
+Approximately how many individuals are responsible for data science workloads at your place of business? (2020),1,Data science team size
+Approximately how many individuals are responsible for data science workloads at your place of business? (2021),1,Data science team size
+Approximately how many individuals are responsible for data science workloads at your place of business? (2022),1,Data science team size
+Approximately how many times have you used a TPU (tensor processing unit)? (2020),2,TPU usage
+Approximately how many times have you used a TPU (tensor processing unit)? (2021),2,TPU usage
+Approximately how many times have you used a TPU (tensor processing unit)? (2022),2,TPU usage
+Approximately how much money have you (or your team) spent on machine learning and/or cloud computing services at home (or at work) in the past 5 years (approximate $USD)? (2020),3,Machine learning/cloud computing expenses (5 yr)
+Approximately how much money have you (or your team) spent on machine learning and/or cloud computing services at home (or at work) in the past 5 years (approximate $USD)? (2021),3,Machine learning/cloud computing expenses (5 yr)
+"Approximately how much money have you spent on machine learning and/or cloud computing services at home or at work in the past 5 years (approximate $USD)?
+ (approximate $USD)? (2022)",3,Machine learning/cloud computing expenses (5 yr)
+"Are you currently a student? (high school, university, or graduate) (2022)",4,Student
+Did your research make use of machine learning? - No (2022),5,Machine learning usage for research
+"Did your research make use of machine learning? - Yes, the research made advances related to some novel machine learning method (theoretical research) (2022)",5,Machine learning usage for research
+"Did your research make use of machine learning? - Yes, the research made use of machine learning as a tool (applied research) (2022)",5,Machine learning usage for research
+Do you download pre-trained model weights from any of the following services? (Select all that apply) - Selected Choice -   TensorFlow Hub  (2022),6,Download pre-trained model weights
+Do you download pre-trained model weights from any of the following services? (Select all that apply) - Selected Choice -  Huggingface Models  (2022),6,Download pre-trained model weights
+Do you download pre-trained model weights from any of the following services? (Select all that apply) - Selected Choice -  Jumpstart  (2022),6,Download pre-trained model weights
+Do you download pre-trained model weights from any of the following services? (Select all that apply) - Selected Choice -  Kaggle datasets  (2022),6,Download pre-trained model weights
+Do you download pre-trained model weights from any of the following services? (Select all that apply) - Selected Choice -  NVIDIA NGC models   (2022),6,Download pre-trained model weights
+Do you download pre-trained model weights from any of the following services? (Select all that apply) - Selected Choice -  ONNX models  (2022),6,Download pre-trained model weights
+Do you download pre-trained model weights from any of the following services? (Select all that apply) - Selected Choice -  PyTorch Hub  (2022),6,Download pre-trained model weights
+Do you download pre-trained model weights from any of the following services? (Select all that apply) - Selected Choice -  Timm  (2022),6,Download pre-trained model weights
+"Do you download pre-trained model weights from any of the following services? (Select all that apply) - Selected Choice - No, I do not download pre-trained model weights on a regular basis (2022)",6,Download pre-trained model weights
+Do you download pre-trained model weights from any of the following services? (Select all that apply) - Selected Choice - Other storage services (i.e. google drive) (2022),6,Download pre-trained model weights
+Do you use any of the following automated machine learning tools?  (Select all that apply) - Selected Choice -   Amazon Sagemaker Autopilot  (2022),7,Automated machine learning tools
+Do you use any of the following automated machine learning tools?  (Select all that apply) - Selected Choice -   Azure Automated Machine Learning  (2022),7,Automated machine learning tools
+Do you use any of the following automated machine learning tools?  (Select all that apply) - Selected Choice -  Databricks AutoML  (2022),7,Automated machine learning tools
+Do you use any of the following automated machine learning tools?  (Select all that apply) - Selected Choice -  DataRobot AutoML  (2022),7,Automated machine learning tools
+Do you use any of the following automated machine learning tools?  (Select all that apply) - Selected Choice -  Google Cloud AutoML  (2022),7,Automated machine learning tools
+Do you use any of the following automated machine learning tools?  (Select all that apply) - Selected Choice -  H2O Driverless AI   (2022),7,Automated machine learning tools
+Do you use any of the following automated machine learning tools?  (Select all that apply) - Selected Choice - No / None (2022),7,Automated machine learning tools
+Do you use any of the following automated machine learning tools?  (Select all that apply) - Selected Choice - Other (2022),7,Automated machine learning tools
+Which of the following automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Amazon Sagemaker Autopilot  (2021),7,Automated machine learning tools
+Which of the following automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Auto_ml  (2020),7,Automated machine learning tools
+Which of the following automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Auto-Keras  (2020),7,Automated machine learning tools
+Which of the following automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Auto-Sklearn  (2020),7,Automated machine learning tools
+Which of the following automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Azure Automated Machine Learning  (2021),7,Automated machine learning tools
+Which of the following automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice -   MLbox  (2020),7,Automated machine learning tools
+Which of the following automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Tpot  (2020),7,Automated machine learning tools
+Which of the following automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Xcessiv  (2020),7,Automated machine learning tools
+Which of the following automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice -  Databricks AutoML  (2020),7,Automated machine learning tools
+Which of the following automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice -  Databricks AutoML  (2021),7,Automated machine learning tools
+Which of the following automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice -  DataRobot AutoML  (2020),7,Automated machine learning tools
+Which of the following automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice -  DataRobot AutoML  (2021),7,Automated machine learning tools
+Which of the following automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice -  Google Cloud AutoML  (2020),7,Automated machine learning tools
+Which of the following automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice -  Google Cloud AutoML  (2021),7,Automated machine learning tools
+Which of the following automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice -  H20 Driverless AI   (2020),7,Automated machine learning tools
+Which of the following automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice -  H2O Driverless AI   (2021),7,Automated machine learning tools
+Which of the following automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice - No / None (2020),7,Automated machine learning tools
+Which of the following automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice - No / None (2021),7,Automated machine learning tools
+Which of the following automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice - Other (2020),7,Automated machine learning tools
+Which of the following automated machine learning tools (or partial AutoML tools) do you use on a regular basis?  (Select all that apply) - Selected Choice - Other (2021),7,Automated machine learning tools
+Do you use any of the following data visualization libraries on a regular basis?  (Select all that apply) - Selected Choice -  Altair  (2022),8,Data visualization libraries
+Do you use any of the following data visualization libraries on a regular basis?  (Select all that apply) - Selected Choice -  Bokeh  (2022),8,Data visualization libraries
+Do you use any of the following data visualization libraries on a regular basis?  (Select all that apply) - Selected Choice -  D3 js  (2022),8,Data visualization libraries
+Do you use any of the following data visualization libraries on a regular basis?  (Select all that apply) - Selected Choice -  Dygraphs  (2022),8,Data visualization libraries
+Do you use any of the following data visualization libraries on a regular basis?  (Select all that apply) - Selected Choice -  Geoplotlib  (2022),8,Data visualization libraries
+Do you use any of the following data visualization libraries on a regular basis?  (Select all that apply) - Selected Choice -  Ggplot / ggplot2  (2022),8,Data visualization libraries
+Do you use any of the following data visualization libraries on a regular basis?  (Select all that apply) - Selected Choice -  Highcharter  (2022),8,Data visualization libraries
+Do you use any of the following data visualization libraries on a regular basis?  (Select all that apply) - Selected Choice -  Leaflet / Folium  (2022),8,Data visualization libraries
+Do you use any of the following data visualization libraries on a regular basis?  (Select all that apply) - Selected Choice -  Matplotlib  (2022),8,Data visualization libraries
+Do you use any of the following data visualization libraries on a regular basis?  (Select all that apply) - Selected Choice -  Plotly / Plotly Express  (2022),8,Data visualization libraries
+Do you use any of the following data visualization libraries on a regular basis?  (Select all that apply) - Selected Choice -  Pygal  (2022),8,Data visualization libraries
+Do you use any of the following data visualization libraries on a regular basis?  (Select all that apply) - Selected Choice -  Seaborn  (2022),8,Data visualization libraries
+Do you use any of the following data visualization libraries on a regular basis?  (Select all that apply) - Selected Choice -  Shiny  (2022),8,Data visualization libraries
+Do you use any of the following data visualization libraries on a regular basis?  (Select all that apply) - Selected Choice - None (2022),8,Data visualization libraries
+Do you use any of the following data visualization libraries on a regular basis?  (Select all that apply) - Selected Choice - Other (2022),8,Data visualization libraries
+What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  Altair  (2020),8,Data visualization libraries
+What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  Altair  (2021),8,Data visualization libraries
+What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  Bokeh  (2020),8,Data visualization libraries
+What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  Bokeh  (2021),8,Data visualization libraries
+What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  D3 js  (2020),8,Data visualization libraries
+What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  D3 js  (2021),8,Data visualization libraries
+What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  Geoplotlib  (2020),8,Data visualization libraries
+What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  Geoplotlib  (2021),8,Data visualization libraries
+What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  Ggplot / ggplot2  (2020),8,Data visualization libraries
+What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  Ggplot / ggplot2  (2021),8,Data visualization libraries
+What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  Leaflet / Folium  (2020),8,Data visualization libraries
+What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  Leaflet / Folium  (2021),8,Data visualization libraries
+What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  Matplotlib  (2020),8,Data visualization libraries
+What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  Matplotlib  (2021),8,Data visualization libraries
+What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  Plotly / Plotly Express  (2020),8,Data visualization libraries
+What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  Plotly / Plotly Express  (2021),8,Data visualization libraries
+What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  Seaborn  (2020),8,Data visualization libraries
+What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  Seaborn  (2021),8,Data visualization libraries
+What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  Shiny  (2020),8,Data visualization libraries
+What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice -  Shiny  (2021),8,Data visualization libraries
+What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice - None (2020),8,Data visualization libraries
+What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice - None (2021),8,Data visualization libraries
+What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice - Other (2020),8,Data visualization libraries
+What data visualization libraries or tools do you use on a regular basis?  (Select all that apply) - Selected Choice - Other (2021),8,Data visualization libraries
+"Do you use any automated machine learning tools (or partial AutoML tools) on a regular basis?  (Select all that apply) - Selected Choice - Automated data augmentation (e.g. imgaug, albumentations) (2020)",9,Types of automated machine learning tools
+"Do you use any automated machine learning tools (or partial AutoML tools) on a regular basis?  (Select all that apply) - Selected Choice - Automated data augmentation (e.g. imgaug, albumentations) (2021)",9,Types of automated machine learning tools
+"Do you use any automated machine learning tools (or partial AutoML tools) on a regular basis?  (Select all that apply) - Selected Choice - Automated feature engineering/selection (e.g. tpot, boruta_py) (2020)",9,Types of automated machine learning tools
+"Do you use any automated machine learning tools (or partial AutoML tools) on a regular basis?  (Select all that apply) - Selected Choice - Automated feature engineering/selection (e.g. tpot, boruta_py) (2021)",9,Types of automated machine learning tools
+"Do you use any automated machine learning tools (or partial AutoML tools) on a regular basis?  (Select all that apply) - Selected Choice - Automated hyperparameter tuning (e.g. hyperopt, ray.tune, Vizier) (2020)",9,Types of automated machine learning tools
+"Do you use any automated machine learning tools (or partial AutoML tools) on a regular basis?  (Select all that apply) - Selected Choice - Automated hyperparameter tuning (e.g. hyperopt, ray.tune, Vizier) (2021)",9,Types of automated machine learning tools
+"Do you use any automated machine learning tools (or partial AutoML tools) on a regular basis?  (Select all that apply) - Selected Choice - Automated model architecture searches (e.g. darts, enas) (2020)",9,Types of automated machine learning tools
+"Do you use any automated machine learning tools (or partial AutoML tools) on a regular basis?  (Select all that apply) - Selected Choice - Automated model architecture searches (e.g. darts, enas) (2021)",9,Types of automated machine learning tools
+"Do you use any automated machine learning tools (or partial AutoML tools) on a regular basis?  (Select all that apply) - Selected Choice - Automated model selection (e.g. auto-sklearn, xcessiv) (2020)",9,Types of automated machine learning tools
+"Do you use any automated machine learning tools (or partial AutoML tools) on a regular basis?  (Select all that apply) - Selected Choice - Automated model selection (e.g. auto-sklearn, xcessiv) (2021)",9,Types of automated machine learning tools
+"Do you use any automated machine learning tools (or partial AutoML tools) on a regular basis?  (Select all that apply) - Selected Choice - Automation of full ML pipelines (e.g. Google AutoML, H20 Driverless AI) (2020)",9,Types of automated machine learning tools
+"Do you use any automated machine learning tools (or partial AutoML tools) on a regular basis?  (Select all that apply) - Selected Choice - Automation of full ML pipelines (e.g. Google AutoML, H2O Driverless AI) (2021)",9,Types of automated machine learning tools
+Do you use any automated machine learning tools (or partial AutoML tools) on a regular basis?  (Select all that apply) - Selected Choice - No / None (2020),9,Types of automated machine learning tools
+Do you use any automated machine learning tools (or partial AutoML tools) on a regular basis?  (Select all that apply) - Selected Choice - No / None (2021),9,Types of automated machine learning tools
+Do you use any automated machine learning tools (or partial AutoML tools) on a regular basis?  (Select all that apply) - Selected Choice - Other (2020),9,Types of automated machine learning tools
+Do you use any automated machine learning tools (or partial AutoML tools) on a regular basis?  (Select all that apply) - Selected Choice - Other (2021),9,Types of automated machine learning tools
+Do you use any of the following business intelligence tools? (Select all that apply) - Selected Choice - Alteryx  (2022),10,BI tools
+Do you use any of the following business intelligence tools? (Select all that apply) - Selected Choice - Amazon QuickSight (2022),10,BI tools
+Do you use any of the following business intelligence tools? (Select all that apply) - Selected Choice - Domo (2022),10,BI tools
+Do you use any of the following business intelligence tools? (Select all that apply) - Selected Choice - Google Data Studio (2022),10,BI tools
+Do you use any of the following business intelligence tools? (Select all that apply) - Selected Choice - Looker (2022),10,BI tools
+Do you use any of the following business intelligence tools? (Select all that apply) - Selected Choice - Microsoft Azure Synapse  (2022),10,BI tools
+Do you use any of the following business intelligence tools? (Select all that apply) - Selected Choice - Microsoft Power BI (2022),10,BI tools
+Do you use any of the following business intelligence tools? (Select all that apply) - Selected Choice - None (2022),10,BI tools
+Do you use any of the following business intelligence tools? (Select all that apply) - Selected Choice - Other (2022),10,BI tools
+Do you use any of the following business intelligence tools? (Select all that apply) - Selected Choice - Qlik Sense (2022),10,BI tools
+Do you use any of the following business intelligence tools? (Select all that apply) - Selected Choice - SAP Analytics Cloud  (2022),10,BI tools
+Do you use any of the following business intelligence tools? (Select all that apply) - Selected Choice - Sisense  (2022),10,BI tools
+Do you use any of the following business intelligence tools? (Select all that apply) - Selected Choice - Tableau (2022),10,BI tools
+Do you use any of the following business intelligence tools? (Select all that apply) - Selected Choice - Thoughtspot  (2022),10,BI tools
+Do you use any of the following business intelligence tools? (Select all that apply) - Selected Choice - TIBCO Spotfire (2022),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - Alteryx  (2020),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - Alteryx  (2021),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - Amazon QuickSight (2020),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - Amazon QuickSight (2021),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - Domo (2020),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - Domo (2021),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - Einstein Analytics (2020),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - Google Data Studio (2020),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - Google Data Studio (2021),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - Looker (2020),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - Looker (2021),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - Microsoft Azure Synapse  (2021),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - Microsoft Power BI (2020),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - Microsoft Power BI (2021),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - None (2020),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - None (2021),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - Other (2020),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - Other (2021),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - Qlik (2020),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - Qlik (2021),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - Salesforce (2020),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - Salesforce (2021),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - SAP Analytics Cloud  (2020),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - SAP Analytics Cloud  (2021),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - Sisense  (2020),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - Sisense  (2021),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - Tableau (2020),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - Tableau (2021),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - Tableau CRM (2021),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - Thoughtspot  (2021),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - TIBCO Spotfire (2020),10,BI tools
+Which of the following business intelligence tools do you use on a regular basis? (Select all that apply) - Selected Choice - TIBCO Spotfire (2021),10,BI tools
+Do you use any of the following cloud computing products on a regular basis? (Select all that apply) - Selected Choice -  Amazon EC2  (2020),11,Cloud computing
+Do you use any of the following cloud computing products on a regular basis? (Select all that apply) - Selected Choice -  Amazon Elastic Compute Cloud (EC2)  (2021),11,Cloud computing
+Do you use any of the following cloud computing products on a regular basis? (Select all that apply) - Selected Choice -  Amazon Elastic Container Service  (2020),11,Cloud computing
+Do you use any of the following cloud computing products on a regular basis? (Select all that apply) - Selected Choice -  AWS Lambda  (2020),11,Cloud computing
+Do you use any of the following cloud computing products on a regular basis? (Select all that apply) - Selected Choice -  Azure Cloud Services  (2020),11,Cloud computing
+Do you use any of the following cloud computing products on a regular basis? (Select all that apply) - Selected Choice -  Azure Functions  (2020),11,Cloud computing
+Do you use any of the following cloud computing products on a regular basis? (Select all that apply) - Selected Choice -  Google Cloud App Engine  (2020),11,Cloud computing
+Do you use any of the following cloud computing products on a regular basis? (Select all that apply) - Selected Choice -  Google Cloud Compute Engine  (2020),11,Cloud computing
+Do you use any of the following cloud computing products on a regular basis? (Select all that apply) - Selected Choice -  Google Cloud Compute Engine  (2021),11,Cloud computing
+Do you use any of the following cloud computing products on a regular basis? (Select all that apply) - Selected Choice -  Google Cloud Functions  (2020),11,Cloud computing
+Do you use any of the following cloud computing products on a regular basis? (Select all that apply) - Selected Choice -  Google Cloud Run  (2020),11,Cloud computing
+Do you use any of the following cloud computing products on a regular basis? (Select all that apply) - Selected Choice -  Microsoft Azure Container Instances  (2020),11,Cloud computing
+Do you use any of the following cloud computing products on a regular basis? (Select all that apply) - Selected Choice -  Microsoft Azure Virtual Machines  (2021),11,Cloud computing
+Do you use any of the following cloud computing products on a regular basis? (Select all that apply) - Selected Choice - No / None (2020),11,Cloud computing
+Do you use any of the following cloud computing products on a regular basis? (Select all that apply) - Selected Choice - No / None (2021),11,Cloud computing
+Do you use any of the following cloud computing products on a regular basis? (Select all that apply) - Selected Choice - Other (2020),11,Cloud computing
+Do you use any of the following cloud computing products on a regular basis? (Select all that apply) - Selected Choice - Other (2021),11,Cloud computing
+Do you use any of the following cloud computing products? (Select all that apply) - Selected Choice -  Amazon Elastic Compute Cloud (EC2)  (2022),11,Cloud computing
+Do you use any of the following cloud computing products? (Select all that apply) - Selected Choice -  Google Cloud Compute Engine  (2022),11,Cloud computing
+Do you use any of the following cloud computing products? (Select all that apply) - Selected Choice -  Microsoft Azure Virtual Machines  (2022),11,Cloud computing
+Do you use any of the following cloud computing products? (Select all that apply) - Selected Choice - No / None (2022),11,Cloud computing
+Do you use any of the following cloud computing products? (Select all that apply) - Selected Choice - Other (2022),11,Cloud computing
+"Do you use any of the following data products (relational databases, data warehouses, data lakes, or similar)? (Select all that apply) - Selected Choice - Amazon DynamoDB  (2022)",12,Data products
+"Do you use any of the following data products (relational databases, data warehouses, data lakes, or similar)? (Select all that apply) - Selected Choice - Amazon RDS  (2022)",12,Data products
+"Do you use any of the following data products (relational databases, data warehouses, data lakes, or similar)? (Select all that apply) - Selected Choice - Amazon Redshift  (2022)",12,Data products
+"Do you use any of the following data products (relational databases, data warehouses, data lakes, or similar)? (Select all that apply) - Selected Choice - Google Cloud BigQuery  (2022)",12,Data products
+"Do you use any of the following data products (relational databases, data warehouses, data lakes, or similar)? (Select all that apply) - Selected Choice - Google Cloud SQL  (2022)",12,Data products
+"Do you use any of the following data products (relational databases, data warehouses, data lakes, or similar)? (Select all that apply) - Selected Choice - IBM Db2  (2022)",12,Data products
+"Do you use any of the following data products (relational databases, data warehouses, data lakes, or similar)? (Select all that apply) - Selected Choice - Microsoft Azure SQL Database  (2022)",12,Data products
+"Do you use any of the following data products (relational databases, data warehouses, data lakes, or similar)? (Select all that apply) - Selected Choice - Microsoft SQL Server  (2022)",12,Data products
+"Do you use any of the following data products (relational databases, data warehouses, data lakes, or similar)? (Select all that apply) - Selected Choice - MongoDB  (2022)",12,Data products
+"Do you use any of the following data products (relational databases, data warehouses, data lakes, or similar)? (Select all that apply) - Selected Choice - MySQL  (2022)",12,Data products
+"Do you use any of the following data products (relational databases, data warehouses, data lakes, or similar)? (Select all that apply) - Selected Choice - None (2022)",12,Data products
+"Do you use any of the following data products (relational databases, data warehouses, data lakes, or similar)? (Select all that apply) - Selected Choice - Oracle Database  (2022)",12,Data products
+"Do you use any of the following data products (relational databases, data warehouses, data lakes, or similar)? (Select all that apply) - Selected Choice - Other (2022)",12,Data products
+"Do you use any of the following data products (relational databases, data warehouses, data lakes, or similar)? (Select all that apply) - Selected Choice - PostgreSQL  (2022)",12,Data products
+"Do you use any of the following data products (relational databases, data warehouses, data lakes, or similar)? (Select all that apply) - Selected Choice - Snowflake  (2022)",12,Data products
+"Do you use any of the following data products (relational databases, data warehouses, data lakes, or similar)? (Select all that apply) - Selected Choice - SQLite  (2022)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - Amazon Athena  (2020)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - Amazon Aurora  (2021)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - Amazon DynamoDB  (2020)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - Amazon DynamoDB  (2021)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - Amazon RDS  (2021)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - Amazon Redshift  (2020)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - Amazon Redshift  (2021)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - Google Cloud BigQuery  (2020)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - Google Cloud BigQuery  (2021)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - Google Cloud BigTable  (2021)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - Google Cloud Firestore  (2020)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - Google Cloud Firestore  (2021)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - Google Cloud Spanner  (2021)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - Google Cloud SQL  (2020)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - Google Cloud SQL  (2021)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - IBM Db2  (2020)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - IBM Db2  (2021)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - Microsoft Access  (2020)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - Microsoft Azure Cosmos DB  (2021)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - Microsoft Azure Data Lake Storage  (2020)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - Microsoft Azure SQL Database  (2021)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - Microsoft SQL Server  (2020)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - Microsoft SQL Server  (2021)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - MongoDB  (2020)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - MongoDB  (2021)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - MySQL  (2020)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - MySQL  (2021)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - None (2020)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - None (2021)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - Oracle Database  (2020)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - Oracle Database  (2021)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - Other (2020)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - Other (2021)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - PostgreSQL  (2021)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - PostgresSQL  (2020)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - Snowflake  (2020)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - Snowflake  (2021)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - SQLite  (2020)",12,Data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you use on a regular basis? (Select all that apply) - Selected Choice - SQLite  (2021)",12,Data products
+"On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - Cloud-certification programs (direct from AWS, Azure, GCP, or similar) (2020)",13,Data science courses
+"On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - Cloud-certification programs (direct from AWS, Azure, GCP, or similar) (2021)",13,Data science courses
+"On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - Cloud-certification programs (direct from AWS, Azure, GCP, or similar) (2022)",13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - Coursera (2020),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - Coursera (2021),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - Coursera (2022),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - DataCamp (2020),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - DataCamp (2021),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - DataCamp (2022),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - edX (2020),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - edX (2021),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - edX (2022),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - Fast.ai (2020),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - Fast.ai (2021),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - Fast.ai (2022),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - Kaggle Learn Courses (2020),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - Kaggle Learn Courses (2021),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - Kaggle Learn Courses (2022),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - LinkedIn Learning (2020),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - LinkedIn Learning (2021),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - LinkedIn Learning (2022),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - None (2020),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - None (2021),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - None (2022),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - Other (2020),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - Other (2021),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - Other (2022),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - Udacity (2020),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - Udacity (2021),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - Udacity (2022),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - Udemy (2020),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - Udemy (2021),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - Udemy (2022),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - University Courses (resulting in a university degree) (2020),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - University Courses (resulting in a university degree) (2021),13,Data science courses
+On which platforms have you begun or completed data science courses? (Select all that apply) - Selected Choice - University Courses (resulting in a university degree) (2022),13,Data science courses
+Select any activities that make up an important part of your role at work: (Select all that apply) - Analyze and understand data to influence product or business decisions (2022),14,Activity that describes your work
+Select any activities that make up an important part of your role at work: (Select all that apply) - Build and/or run a machine learning service that operationally improves my product or workflows (2022),14,Activity that describes your work
+"Select any activities that make up an important part of your role at work: (Select all that apply) - Build and/or run the data infrastructure that my business uses for storing, analyzing, and operationalizing data (2022)",14,Activity that describes your work
+Select any activities that make up an important part of your role at work: (Select all that apply) - Build prototypes to explore applying machine learning to new areas (2022),14,Activity that describes your work
+Select any activities that make up an important part of your role at work: (Select all that apply) - Do research that advances the state of the art of machine learning (2022),14,Activity that describes your work
+Select any activities that make up an important part of your role at work: (Select all that apply) - Experimentation and iteration to improve existing ML models (2022),14,Activity that describes your work
+Select any activities that make up an important part of your role at work: (Select all that apply) - None of these activities are an important part of my role at work (2022),14,Activity that describes your work
+Select any activities that make up an important part of your role at work: (Select all that apply) - Other (2022),14,Activity that describes your work
+Select any activities that make up an important part of your role at work: (Select all that apply) - Selected Choice - Analyze and understand data to influence product or business decisions (2020),14,Activity that describes your work
+Select any activities that make up an important part of your role at work: (Select all that apply) - Selected Choice - Analyze and understand data to influence product or business decisions (2021),14,Activity that describes your work
+Select any activities that make up an important part of your role at work: (Select all that apply) - Selected Choice - Build and/or run a machine learning service that operationally improves my product or workflows (2020),14,Activity that describes your work
+Select any activities that make up an important part of your role at work: (Select all that apply) - Selected Choice - Build and/or run a machine learning service that operationally improves my product or workflows (2021),14,Activity that describes your work
+"Select any activities that make up an important part of your role at work: (Select all that apply) - Selected Choice - Build and/or run the data infrastructure that my business uses for storing, analyzing, and operationalizing data (2020)",14,Activity that describes your work
+"Select any activities that make up an important part of your role at work: (Select all that apply) - Selected Choice - Build and/or run the data infrastructure that my business uses for storing, analyzing, and operationalizing data (2021)",14,Activity that describes your work
+Select any activities that make up an important part of your role at work: (Select all that apply) - Selected Choice - Build prototypes to explore applying machine learning to new areas (2020),14,Activity that describes your work
+Select any activities that make up an important part of your role at work: (Select all that apply) - Selected Choice - Build prototypes to explore applying machine learning to new areas (2021),14,Activity that describes your work
+Select any activities that make up an important part of your role at work: (Select all that apply) - Selected Choice - Do research that advances the state of the art of machine learning (2020),14,Activity that describes your work
+Select any activities that make up an important part of your role at work: (Select all that apply) - Selected Choice - Do research that advances the state of the art of machine learning (2021),14,Activity that describes your work
+Select any activities that make up an important part of your role at work: (Select all that apply) - Selected Choice - Experimentation and iteration to improve existing ML models (2020),14,Activity that describes your work
+Select any activities that make up an important part of your role at work: (Select all that apply) - Selected Choice - Experimentation and iteration to improve existing ML models (2021),14,Activity that describes your work
+Select any activities that make up an important part of your role at work: (Select all that apply) - Selected Choice - None of these activities are an important part of my role at work (2020),14,Activity that describes your work
+Select any activities that make up an important part of your role at work: (Select all that apply) - Selected Choice - None of these activities are an important part of my role at work (2021),14,Activity that describes your work
+Select any activities that make up an important part of your role at work: (Select all that apply) - Selected Choice - Other (2020),14,Activity that describes your work
+Select any activities that make up an important part of your role at work: (Select all that apply) - Selected Choice - Other (2021),14,Activity that describes your work
+Select the title most similar to your current role (or most recent title if retired): - Selected Choice (2020),15,Current role
+Select the title most similar to your current role (or most recent title if retired): - Selected Choice (2021),15,Current role
+Select the title most similar to your current role (or most recent title if retired): - Selected Choice (2022),15,Current role
+What is the highest level of formal education that you have attained or plan to attain within the next 2 years? (2020),16,Formal education plan (in 2 yr)
+What is the highest level of formal education that you have attained or plan to attain within the next 2 years? (2021),16,Formal education plan (in 2 yr)
+What is the highest level of formal education that you have attained or plan to attain within the next 2 years? (2022),16,Formal education plan (in 2 yr)
+What is the size of the company where you are employed? (2020),17,Size of company
+What is the size of the company where you are employed? (2021),17,Size of company
+What is the size of the company where you are employed? (2022),17,Size of company
+What is your age (# years)? (2020),18,Age
+What is your age (# years)? (2021),18,Age
+What is your age (# years)? (2022),18,Age
+What is your current yearly compensation (approximate $USD)? (2020),19,Compensation (USD/yr)
+What is your current yearly compensation (approximate $USD)? (2021),19,Compensation (USD/yr)
+What is your current yearly compensation (approximate $USD)? (2022),19,Compensation (USD/yr)
+What is your gender? - Selected Choice (2020),20,Gender
+What is your gender? - Selected Choice (2021),20,Gender
+What is your gender? - Selected Choice (2022),20,Gender
+Do you use any of the following hosted notebook products?  (Select all that apply) - Selected Choice -  Amazon EMR Notebooks  (2022),21,Hosted notebook products
+Do you use any of the following hosted notebook products?  (Select all that apply) - Selected Choice -  Amazon Sagemaker Studio  (2022),21,Hosted notebook products
+Do you use any of the following hosted notebook products?  (Select all that apply) - Selected Choice -  Amazon Sagemaker Studio Lab  (2022),21,Hosted notebook products
+Do you use any of the following hosted notebook products?  (Select all that apply) - Selected Choice -  Code Ocean  (2022),21,Hosted notebook products
+Do you use any of the following hosted notebook products?  (Select all that apply) - Selected Choice -  Databricks Collaborative Notebooks  (2022),21,Hosted notebook products
+Do you use any of the following hosted notebook products?  (Select all that apply) - Selected Choice -  Deepnote Notebooks  (2022),21,Hosted notebook products
+Do you use any of the following hosted notebook products?  (Select all that apply) - Selected Choice -  Gradient Notebooks  (2022),21,Hosted notebook products
+Do you use any of the following hosted notebook products?  (Select all that apply) - Selected Choice -  IBM Watson Studio  (2022),21,Hosted notebook products
+Do you use any of the following hosted notebook products?  (Select all that apply) - Selected Choice -  Kaggle Notebooks (2022),21,Hosted notebook products
+Do you use any of the following hosted notebook products?  (Select all that apply) - Selected Choice -  Noteable Notebooks  (2022),21,Hosted notebook products
+Do you use any of the following hosted notebook products?  (Select all that apply) - Selected Choice - Azure Notebooks (2022),21,Hosted notebook products
+Do you use any of the following hosted notebook products?  (Select all that apply) - Selected Choice - Colab Notebooks (2022),21,Hosted notebook products
+Do you use any of the following hosted notebook products?  (Select all that apply) - Selected Choice - Google Cloud Vertex AI Workbench  (2022),21,Hosted notebook products
+Do you use any of the following hosted notebook products?  (Select all that apply) - Selected Choice - Hex Workspaces (2022),21,Hosted notebook products
+Do you use any of the following hosted notebook products?  (Select all that apply) - Selected Choice - None (2022),21,Hosted notebook products
+Do you use any of the following hosted notebook products?  (Select all that apply) - Selected Choice - Other (2022),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice -  Amazon EMR Notebooks  (2020),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice -  Amazon EMR Notebooks  (2021),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice -  Amazon Sagemaker Studio  (2020),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice -  Amazon Sagemaker Studio Notebooks  (2021),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice -  Binder / JupyterHub  (2020),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice -  Binder / JupyterHub  (2021),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice -  Code Ocean  (2020),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice -  Code Ocean  (2021),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice -  Databricks Collaborative Notebooks  (2020),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice -  Databricks Collaborative Notebooks  (2021),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice -  Deepnote Notebooks  (2021),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice -  IBM Watson Studio  (2020),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice -  IBM Watson Studio  (2021),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice -  Kaggle Notebooks (2020),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice -  Kaggle Notebooks (2021),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice -  Observable Notebooks  (2021),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice -  Paperspace / Gradient  (2020),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice -  Paperspace / Gradient  (2021),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice -  Zeppelin / Zepl Notebooks  (2021),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice - Azure Notebooks (2020),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice - Azure Notebooks (2021),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice - Colab Notebooks (2020),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice - Colab Notebooks (2021),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice - Google Cloud AI Platform Notebooks  (2020),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice - Google Cloud Datalab (2021),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice - Google Cloud Datalab Notebooks (2020),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice - Google Cloud Notebooks (AI Platform / Vertex AI)  (2021),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice - None (2020),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice - None (2021),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice - Other (2020),21,Hosted notebook products
+Which of the following hosted notebook products do you use on a regular basis?  (Select all that apply) - Selected Choice - Other (2021),21,Hosted notebook products
+Do you use any of the following data storage products on a regular basis? (Select all that apply) - Selected Choice -  Amazon Elastic File System (EFS)   (2021),22,Data storage products
+Do you use any of the following data storage products on a regular basis? (Select all that apply) - Selected Choice -  Amazon Simple Storage Service (S3)   (2021),22,Data storage products
+Do you use any of the following data storage products on a regular basis? (Select all that apply) - Selected Choice -  Google Cloud Filestore  (2021),22,Data storage products
+Do you use any of the following data storage products on a regular basis? (Select all that apply) - Selected Choice - Google Cloud Storage (GCS)    (2021),22,Data storage products
+Do you use any of the following data storage products on a regular basis? (Select all that apply) - Selected Choice - Microsoft Azure Data Lake Storage  (2021),22,Data storage products
+Do you use any of the following data storage products on a regular basis? (Select all that apply) - Selected Choice - Microsoft Azure Disk Storage  (2021),22,Data storage products
+Do you use any of the following data storage products on a regular basis? (Select all that apply) - Selected Choice - No / None (2021),22,Data storage products
+Do you use any of the following data storage products on a regular basis? (Select all that apply) - Selected Choice - Other (2021),22,Data storage products
+Do you use any of the following data storage products? (Select all that apply) - Selected Choice -  Amazon Elastic File System (EFS)   (2022),22,Data storage products
+Do you use any of the following data storage products? (Select all that apply) - Selected Choice -  Amazon Simple Storage Service (S3)   (2022),22,Data storage products
+Do you use any of the following data storage products? (Select all that apply) - Selected Choice -  Google Cloud Filestore  (2022),22,Data storage products
+Do you use any of the following data storage products? (Select all that apply) - Selected Choice -  Microsoft Azure Files  (2022),22,Data storage products
+Do you use any of the following data storage products? (Select all that apply) - Selected Choice - Google Cloud Storage (GCS)    (2022),22,Data storage products
+Do you use any of the following data storage products? (Select all that apply) - Selected Choice - Microsoft Azure Blob Storage (2022),22,Data storage products
+Do you use any of the following data storage products? (Select all that apply) - Selected Choice - No / None (2022),22,Data storage products
+Do you use any of the following data storage products? (Select all that apply) - Selected Choice - Other (2022),22,Data storage products
+Do you use any of the following machine learning products on a regular basis? (Select all that apply) - Selected Choice -  Amazon Forecast  (2020),23,Machine learning products
+Do you use any of the following machine learning products on a regular basis? (Select all that apply) - Selected Choice -  Amazon Rekognition  (2020),23,Machine learning products
+Do you use any of the following machine learning products on a regular basis? (Select all that apply) - Selected Choice -  Amazon SageMaker  (2020),23,Machine learning products
+Do you use any of the following machine learning products on a regular basis? (Select all that apply) - Selected Choice -  Azure Cognitive Services  (2020),23,Machine learning products
+Do you use any of the following machine learning products on a regular basis? (Select all that apply) - Selected Choice -  Azure Machine Learning Studio  (2020),23,Machine learning products
+Do you use any of the following machine learning products on a regular basis? (Select all that apply) - Selected Choice -  Google Cloud AI Platform / Google Cloud ML Engine (2020),23,Machine learning products
+Do you use any of the following machine learning products on a regular basis? (Select all that apply) - Selected Choice -  Google Cloud Natural Language  (2020),23,Machine learning products
+Do you use any of the following machine learning products on a regular basis? (Select all that apply) - Selected Choice -  Google Cloud Video AI  (2020),23,Machine learning products
+Do you use any of the following machine learning products on a regular basis? (Select all that apply) - Selected Choice -  Google Cloud Vision AI  (2020),23,Machine learning products
+Do you use any of the following machine learning products on a regular basis? (Select all that apply) - Selected Choice - No / None (2020),23,Machine learning products
+Do you use any of the following machine learning products on a regular basis? (Select all that apply) - Selected Choice - Other (2020),23,Machine learning products
+Do you use any of the following managed machine learning products on a regular basis? (Select all that apply) - Selected Choice -  Alteryx (2021),23,Machine learning products
+Do you use any of the following managed machine learning products on a regular basis? (Select all that apply) - Selected Choice -  Alteryx (2022),23,Machine learning products
+Do you use any of the following managed machine learning products on a regular basis? (Select all that apply) - Selected Choice -  Amazon SageMaker  (2021),23,Machine learning products
+Do you use any of the following managed machine learning products on a regular basis? (Select all that apply) - Selected Choice -  Amazon SageMaker  (2022),23,Machine learning products
+Do you use any of the following managed machine learning products on a regular basis? (Select all that apply) - Selected Choice -  Azure Machine Learning Studio  (2021),23,Machine learning products
+Do you use any of the following managed machine learning products on a regular basis? (Select all that apply) - Selected Choice -  Azure Machine Learning Studio  (2022),23,Machine learning products
+Do you use any of the following managed machine learning products on a regular basis? (Select all that apply) - Selected Choice -  C3.ai (2022),23,Machine learning products
+Do you use any of the following managed machine learning products on a regular basis? (Select all that apply) - Selected Choice -  Databricks (2021),23,Machine learning products
+Do you use any of the following managed machine learning products on a regular basis? (Select all that apply) - Selected Choice -  Databricks (2022),23,Machine learning products
+Do you use any of the following managed machine learning products on a regular basis? (Select all that apply) - Selected Choice -  Dataiku (2021),23,Machine learning products
+Do you use any of the following managed machine learning products on a regular basis? (Select all that apply) - Selected Choice -  Dataiku (2022),23,Machine learning products
+Do you use any of the following managed machine learning products on a regular basis? (Select all that apply) - Selected Choice -  DataRobot (2021),23,Machine learning products
+Do you use any of the following managed machine learning products on a regular basis? (Select all that apply) - Selected Choice -  DataRobot (2022),23,Machine learning products
+Do you use any of the following managed machine learning products on a regular basis? (Select all that apply) - Selected Choice -  Domino Data Lab  (2022),23,Machine learning products
+Do you use any of the following managed machine learning products on a regular basis? (Select all that apply) - Selected Choice -  Google Cloud Vertex AI (2021),23,Machine learning products
+Do you use any of the following managed machine learning products on a regular basis? (Select all that apply) - Selected Choice -  Google Cloud Vertex AI (2022),23,Machine learning products
+Do you use any of the following managed machine learning products on a regular basis? (Select all that apply) - Selected Choice -  H2O AI Cloud  (2022),23,Machine learning products
+Do you use any of the following managed machine learning products on a regular basis? (Select all that apply) - Selected Choice -  Rapidminer (2021),23,Machine learning products
+Do you use any of the following managed machine learning products on a regular basis? (Select all that apply) - Selected Choice -  Rapidminer (2022),23,Machine learning products
+Do you use any of the following managed machine learning products on a regular basis? (Select all that apply) - Selected Choice - No / None (2021),23,Machine learning products
+Do you use any of the following managed machine learning products on a regular basis? (Select all that apply) - Selected Choice - No / None (2022),23,Machine learning products
+Do you use any of the following managed machine learning products on a regular basis? (Select all that apply) - Selected Choice - Other (2021),23,Machine learning products
+Do you use any of the following managed machine learning products on a regular basis? (Select all that apply) - Selected Choice - Other (2022),23,Machine learning products
+Do you use any tools to help manage machine learning experiments? (Select all that apply) - Selected Choice -  ClearML  (2021),24,Machine learning experiments managing tools
+Do you use any tools to help manage machine learning experiments? (Select all that apply) - Selected Choice -  Comet.ml  (2020),24,Machine learning experiments managing tools
+Do you use any tools to help manage machine learning experiments? (Select all that apply) - Selected Choice -  Comet.ml  (2021),24,Machine learning experiments managing tools
+Do you use any tools to help manage machine learning experiments? (Select all that apply) - Selected Choice -  Domino Model Monitor  (2020),24,Machine learning experiments managing tools
+Do you use any tools to help manage machine learning experiments? (Select all that apply) - Selected Choice -  Domino Model Monitor  (2021),24,Machine learning experiments managing tools
+Do you use any tools to help manage machine learning experiments? (Select all that apply) - Selected Choice -  Guild.ai  (2020),24,Machine learning experiments managing tools
+Do you use any tools to help manage machine learning experiments? (Select all that apply) - Selected Choice -  Guild.ai  (2021),24,Machine learning experiments managing tools
+Do you use any tools to help manage machine learning experiments? (Select all that apply) - Selected Choice -  MLflow  (2021),24,Machine learning experiments managing tools
+Do you use any tools to help manage machine learning experiments? (Select all that apply) - Selected Choice -  Neptune.ai  (2020),24,Machine learning experiments managing tools
+Do you use any tools to help manage machine learning experiments? (Select all that apply) - Selected Choice -  Neptune.ai  (2021),24,Machine learning experiments managing tools
+Do you use any tools to help manage machine learning experiments? (Select all that apply) - Selected Choice -  Polyaxon  (2020),24,Machine learning experiments managing tools
+Do you use any tools to help manage machine learning experiments? (Select all that apply) - Selected Choice -  Polyaxon  (2021),24,Machine learning experiments managing tools
+Do you use any tools to help manage machine learning experiments? (Select all that apply) - Selected Choice -  Sacred + Omniboard  (2020),24,Machine learning experiments managing tools
+Do you use any tools to help manage machine learning experiments? (Select all that apply) - Selected Choice -  Sacred + Omniboard  (2021),24,Machine learning experiments managing tools
+Do you use any tools to help manage machine learning experiments? (Select all that apply) - Selected Choice -  TensorBoard  (2020),24,Machine learning experiments managing tools
+Do you use any tools to help manage machine learning experiments? (Select all that apply) - Selected Choice -  TensorBoard  (2021),24,Machine learning experiments managing tools
+Do you use any tools to help manage machine learning experiments? (Select all that apply) - Selected Choice -  Trains  (2020),24,Machine learning experiments managing tools
+Do you use any tools to help manage machine learning experiments? (Select all that apply) - Selected Choice -  Weights & Biases  (2020),24,Machine learning experiments managing tools
+Do you use any tools to help manage machine learning experiments? (Select all that apply) - Selected Choice -  Weights & Biases  (2021),24,Machine learning experiments managing tools
+Do you use any tools to help manage machine learning experiments? (Select all that apply) - Selected Choice - No / None (2020),24,Machine learning experiments managing tools
+Do you use any tools to help manage machine learning experiments? (Select all that apply) - Selected Choice - No / None (2021),24,Machine learning experiments managing tools
+Do you use any tools to help manage machine learning experiments? (Select all that apply) - Selected Choice - Other (2020),24,Machine learning experiments managing tools
+Do you use any tools to help manage machine learning experiments? (Select all that apply) - Selected Choice - Other (2021),24,Machine learning experiments managing tools
+Do you use any tools to help monitor your machine learning models and/or experiments? (Select all that apply) - Selected Choice -  Aporia  (2022),24,Machine learning experiments managing tools
+Do you use any tools to help monitor your machine learning models and/or experiments? (Select all that apply) - Selected Choice -  Arize  (2022),24,Machine learning experiments managing tools
+Do you use any tools to help monitor your machine learning models and/or experiments? (Select all that apply) - Selected Choice -  ClearML  (2022),24,Machine learning experiments managing tools
+Do you use any tools to help monitor your machine learning models and/or experiments? (Select all that apply) - Selected Choice -  Comet.ml  (2022),24,Machine learning experiments managing tools
+Do you use any tools to help monitor your machine learning models and/or experiments? (Select all that apply) - Selected Choice -  DVC  (2022),24,Machine learning experiments managing tools
+Do you use any tools to help monitor your machine learning models and/or experiments? (Select all that apply) - Selected Choice -  Evidently AI  (2022),24,Machine learning experiments managing tools
+Do you use any tools to help monitor your machine learning models and/or experiments? (Select all that apply) - Selected Choice -  Fiddler  (2022),24,Machine learning experiments managing tools
+Do you use any tools to help monitor your machine learning models and/or experiments? (Select all that apply) - Selected Choice -  Guild.ai  (2022),24,Machine learning experiments managing tools
+Do you use any tools to help monitor your machine learning models and/or experiments? (Select all that apply) - Selected Choice -  MLflow  (2022),24,Machine learning experiments managing tools
+Do you use any tools to help monitor your machine learning models and/or experiments? (Select all that apply) - Selected Choice -  Neptune.ai  (2022),24,Machine learning experiments managing tools
+Do you use any tools to help monitor your machine learning models and/or experiments? (Select all that apply) - Selected Choice -  TensorBoard  (2022),24,Machine learning experiments managing tools
+Do you use any tools to help monitor your machine learning models and/or experiments? (Select all that apply) - Selected Choice -  Weights & Biases  (2022),24,Machine learning experiments managing tools
+Do you use any tools to help monitor your machine learning models and/or experiments? (Select all that apply) - Selected Choice -  WhyLabs  (2022),24,Machine learning experiments managing tools
+Do you use any tools to help monitor your machine learning models and/or experiments? (Select all that apply) - Selected Choice - No / None (2022),24,Machine learning experiments managing tools
+Do you use any tools to help monitor your machine learning models and/or experiments? (Select all that apply) - Selected Choice - Other (2022),24,Machine learning experiments managing tools
+Does your current employer incorporate machine learning methods into their business? (2020),25,Machine learning integration to business
+Does your current employer incorporate machine learning methods into their business? (2021),25,Machine learning integration to business
+Does your current employer incorporate machine learning methods into their business? (2022),25,Machine learning integration to business
+Duration (in seconds) (2020),26,Duration
+Duration (in seconds) (2021),26,Duration
+Duration (in seconds) (2022),26,Duration
+For how many years have you been writing code and/or programming? (2020),27,Coding experience
+For how many years have you been writing code and/or programming? (2021),27,Coding experience
+For how many years have you been writing code and/or programming? (2022),27,Coding experience
+For how many years have you used machine learning methods? (2020),28,Machine learning experience
+For how many years have you used machine learning methods? (2021),28,Machine learning experience
+For how many years have you used machine learning methods? (2022),28,Machine learning experience
+Do you use any of the following types of specialized hardware when training machine learning models?  (Select all that apply) - Selected Choice -  GPUs  (2022),29,Specialized machine learning model traning hardware
+Do you use any of the following types of specialized hardware when training machine learning models?  (Select all that apply) - Selected Choice -  Inferentia Chips  (2022),29,Specialized machine learning model traning hardware
+Do you use any of the following types of specialized hardware when training machine learning models?  (Select all that apply) - Selected Choice -  IPUs  (2022),29,Specialized machine learning model traning hardware
+Do you use any of the following types of specialized hardware when training machine learning models?  (Select all that apply) - Selected Choice -  RDUs  (2022),29,Specialized machine learning model traning hardware
+Do you use any of the following types of specialized hardware when training machine learning models?  (Select all that apply) - Selected Choice -  TPUs  (2022),29,Specialized machine learning model traning hardware
+Do you use any of the following types of specialized hardware when training machine learning models?  (Select all that apply) - Selected Choice -  Trainium Chips  (2022),29,Specialized machine learning model traning hardware
+Do you use any of the following types of specialized hardware when training machine learning models?  (Select all that apply) - Selected Choice -  WSEs  (2022),29,Specialized machine learning model traning hardware
+Do you use any of the following types of specialized hardware when training machine learning models?  (Select all that apply) - Selected Choice - None (2022),29,Specialized machine learning model traning hardware
+Do you use any of the following types of specialized hardware when training machine learning models?  (Select all that apply) - Selected Choice - Other (2022),29,Specialized machine learning model traning hardware
+Which types of specialized hardware do you use on a regular basis?  (Select all that apply) - Selected Choice -  AWS Inferentia Chips  (2021),29,Specialized machine learning model traning hardware
+Which types of specialized hardware do you use on a regular basis?  (Select all that apply) - Selected Choice -  AWS Trainium Chips  (2021),29,Specialized machine learning model traning hardware
+Which types of specialized hardware do you use on a regular basis?  (Select all that apply) - Selected Choice -  Google Cloud TPUs  (2021),29,Specialized machine learning model traning hardware
+Which types of specialized hardware do you use on a regular basis?  (Select all that apply) - Selected Choice -  NVIDIA GPUs  (2021),29,Specialized machine learning model traning hardware
+Which types of specialized hardware do you use on a regular basis?  (Select all that apply) - Selected Choice - GPUs (2020),29,Specialized machine learning model traning hardware
+Which types of specialized hardware do you use on a regular basis?  (Select all that apply) - Selected Choice - None (2020),29,Specialized machine learning model traning hardware
+Which types of specialized hardware do you use on a regular basis?  (Select all that apply) - Selected Choice - None (2021),29,Specialized machine learning model traning hardware
+Which types of specialized hardware do you use on a regular basis?  (Select all that apply) - Selected Choice - Other (2020),29,Specialized machine learning model traning hardware
+Which types of specialized hardware do you use on a regular basis?  (Select all that apply) - Selected Choice - Other (2021),29,Specialized machine learning model traning hardware
+Which types of specialized hardware do you use on a regular basis?  (Select all that apply) - Selected Choice - TPUs (2020),29,Specialized machine learning model traning hardware
+"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Blogs (Towards Data Science, Analytics Vidhya, etc) (2020)",30,Favorite media sources on data science topics
+"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Blogs (Towards Data Science, Analytics Vidhya, etc) (2021)",30,Favorite media sources on data science topics
+"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Blogs (Towards Data Science, Analytics Vidhya, etc) (2022)",30,Favorite media sources on data science topics
+"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Course Forums (forums.fast.ai, Coursera forums, etc) (2020)",30,Favorite media sources on data science topics
+"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Course Forums (forums.fast.ai, Coursera forums, etc) (2021)",30,Favorite media sources on data science topics
+"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Course Forums (forums.fast.ai, Coursera forums, etc) (2022)",30,Favorite media sources on data science topics
+"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Email newsletters (Data Elixir, O'Reilly Data & AI, etc) (2020)",30,Favorite media sources on data science topics
+"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Email newsletters (Data Elixir, O'Reilly Data & AI, etc) (2021)",30,Favorite media sources on data science topics
+"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Email newsletters (Data Elixir, O'Reilly Data & AI, etc) (2022)",30,Favorite media sources on data science topics
+"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Journal Publications (peer-reviewed journals, conference proceedings, etc) (2020)",30,Favorite media sources on data science topics
+"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Journal Publications (peer-reviewed journals, conference proceedings, etc) (2021)",30,Favorite media sources on data science topics
+"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Journal Publications (peer-reviewed journals, conference proceedings, etc) (2022)",30,Favorite media sources on data science topics
+"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Kaggle (notebooks, forums, etc) (2020)",30,Favorite media sources on data science topics
+"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Kaggle (notebooks, forums, etc) (2021)",30,Favorite media sources on data science topics
+"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Kaggle (notebooks, forums, etc) (2022)",30,Favorite media sources on data science topics
+Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - None (2020),30,Favorite media sources on data science topics
+Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - None (2021),30,Favorite media sources on data science topics
+Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - None (2022),30,Favorite media sources on data science topics
+Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Other (2020),30,Favorite media sources on data science topics
+Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Other (2021),30,Favorite media sources on data science topics
+Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Other (2022),30,Favorite media sources on data science topics
+"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Podcasts (Chai Time Data Science, O’Reilly Data Show, etc) (2020)",30,Favorite media sources on data science topics
+"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Podcasts (Chai Time Data Science, O’Reilly Data Show, etc) (2021)",30,Favorite media sources on data science topics
+"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Podcasts (Chai Time Data Science, O’Reilly Data Show, etc) (2022)",30,Favorite media sources on data science topics
+"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Reddit (r/machinelearning, etc) (2020)",30,Favorite media sources on data science topics
+"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Reddit (r/machinelearning, etc) (2021)",30,Favorite media sources on data science topics
+"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Reddit (r/machinelearning, etc) (2022)",30,Favorite media sources on data science topics
+"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Slack Communities (ods.ai, kagglenoobs, etc) (2020)",30,Favorite media sources on data science topics
+"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Slack Communities (ods.ai, kagglenoobs, etc) (2021)",30,Favorite media sources on data science topics
+"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Slack Communities (ods.ai, kagglenoobs, etc) (2022)",30,Favorite media sources on data science topics
+Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Twitter (data science influencers) (2020),30,Favorite media sources on data science topics
+Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Twitter (data science influencers) (2021),30,Favorite media sources on data science topics
+Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - Twitter (data science influencers) (2022),30,Favorite media sources on data science topics
+"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - YouTube (Kaggle YouTube, Cloud AI Adventures, etc) (2020)",30,Favorite media sources on data science topics
+"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - YouTube (Kaggle YouTube, Cloud AI Adventures, etc) (2021)",30,Favorite media sources on data science topics
+"Who/what are your favorite media sources that report on data science topics? (Select all that apply) - Selected Choice - YouTube (Kaggle YouTube, Cloud AI Adventures, etc) (2022)",30,Favorite media sources on data science topics
+Year (2020),31,Year
+Year (2021),31,Year
+Year (2022),31,Year
+"Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - General purpose image/video tools (PIL, cv2, skimage, etc) (2020)",32,Computer vision methods
+"Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - General purpose image/video tools (PIL, cv2, skimage, etc) (2021)",32,Computer vision methods
+"Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - General purpose image/video tools (PIL, cv2, skimage, etc) (2022)",32,Computer vision methods
+"Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Generative Networks (GAN, VAE, etc) (2020)",32,Computer vision methods
+"Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Generative Networks (GAN, VAE, etc) (2021)",32,Computer vision methods
+"Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Generative Networks (GAN, VAE, etc) (2022)",32,Computer vision methods
+"Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Image classification and other general purpose networks (VGG, Inception, ResNet, ResNeXt, NASNet, EfficientNet, etc) (2020)",32,Computer vision methods
+"Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Image classification and other general purpose networks (VGG, Inception, ResNet, ResNeXt, NASNet, EfficientNet, etc) (2021)",32,Computer vision methods
+"Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Image classification and other general purpose networks (VGG, Inception, ResNet, ResNeXt, NASNet, EfficientNet, etc) (2022)",32,Computer vision methods
+"Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Image segmentation methods (U-Net, Mask R-CNN, etc) (2020)",32,Computer vision methods
+"Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Image segmentation methods (U-Net, Mask R-CNN, etc) (2021)",32,Computer vision methods
+"Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Image segmentation methods (U-Net, Mask R-CNN, etc) (2022)",32,Computer vision methods
+Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - None (2020),32,Computer vision methods
+Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - None (2021),32,Computer vision methods
+Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - None (2022),32,Computer vision methods
+"Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Object detection methods (YOLOv3, RetinaNet, etc) (2020)",32,Computer vision methods
+"Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Object detection methods (YOLOv3, RetinaNet, etc) (2021)",32,Computer vision methods
+"Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Object detection methods (YOLOv6, RetinaNet, etc) (2022)",32,Computer vision methods
+Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Other (2020),32,Computer vision methods
+Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Other (2021),32,Computer vision methods
+Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Other (2022),32,Computer vision methods
+"Which categories of computer vision methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Vision transformer networks (ViT, DeiT, BiT, BEiT, Swin, etc) (2022)",32,Computer vision methods
+Where do you publicly share or deploy your data analysis or machine learning applications? (Select all that apply) - Selected Choice -  Colab  (2020),33,Data analysis/machine learning deployment
+Where do you publicly share or deploy your data analysis or machine learning applications? (Select all that apply) - Selected Choice -  GitHub  (2020),33,Data analysis/machine learning deployment
+Where do you publicly share or deploy your data analysis or machine learning applications? (Select all that apply) - Selected Choice -  Kaggle  (2020),33,Data analysis/machine learning deployment
+Where do you publicly share or deploy your data analysis or machine learning applications? (Select all that apply) - Selected Choice -  NBViewer  (2020),33,Data analysis/machine learning deployment
+Where do you publicly share or deploy your data analysis or machine learning applications? (Select all that apply) - Selected Choice -  Personal blog  (2020),33,Data analysis/machine learning deployment
+Where do you publicly share or deploy your data analysis or machine learning applications? (Select all that apply) - Selected Choice -  Plotly Dash  (2020),33,Data analysis/machine learning deployment
+Where do you publicly share or deploy your data analysis or machine learning applications? (Select all that apply) - Selected Choice -  Shiny  (2020),33,Data analysis/machine learning deployment
+Where do you publicly share or deploy your data analysis or machine learning applications? (Select all that apply) - Selected Choice -  Streamlit  (2020),33,Data analysis/machine learning deployment
+Where do you publicly share or deploy your data analysis or machine learning applications? (Select all that apply) - Selected Choice - I do not share my work publicly (2020),33,Data analysis/machine learning deployment
+Where do you publicly share or deploy your data analysis or machine learning applications? (Select all that apply) - Selected Choice - Other (2020),33,Data analysis/machine learning deployment
+Where do you publicly share your data analysis or machine learning applications? (Select all that apply) - Selected Choice -  Colab  (2021),33,Data analysis/machine learning deployment
+Where do you publicly share your data analysis or machine learning applications? (Select all that apply) - Selected Choice -  GitHub  (2021),33,Data analysis/machine learning deployment
+Where do you publicly share your data analysis or machine learning applications? (Select all that apply) - Selected Choice -  Kaggle  (2021),33,Data analysis/machine learning deployment
+Where do you publicly share your data analysis or machine learning applications? (Select all that apply) - Selected Choice -  NBViewer  (2021),33,Data analysis/machine learning deployment
+Where do you publicly share your data analysis or machine learning applications? (Select all that apply) - Selected Choice -  Personal blog  (2021),33,Data analysis/machine learning deployment
+Where do you publicly share your data analysis or machine learning applications? (Select all that apply) - Selected Choice -  Plotly Dash  (2021),33,Data analysis/machine learning deployment
+Where do you publicly share your data analysis or machine learning applications? (Select all that apply) - Selected Choice -  Shiny  (2021),33,Data analysis/machine learning deployment
+Where do you publicly share your data analysis or machine learning applications? (Select all that apply) - Selected Choice -  Streamlit  (2021),33,Data analysis/machine learning deployment
+Where do you publicly share your data analysis or machine learning applications? (Select all that apply) - Selected Choice - I do not share my work publicly (2021),33,Data analysis/machine learning deployment
+Where do you publicly share your data analysis or machine learning applications? (Select all that apply) - Selected Choice - Other (2021),33,Data analysis/machine learning deployment
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - Bash (2020),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - Bash (2021),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - Bash (2022),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - C (2020),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - C (2021),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - C (2022),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - C# (2022),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - C++ (2020),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - C++ (2021),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - C++ (2022),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - Go (2022),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - Java (2020),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - Java (2021),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - Java (2022),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - Javascript (2020),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - Javascript (2021),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - Javascript (2022),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - Julia (2020),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - Julia (2021),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - Julia (2022),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - MATLAB (2020),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - MATLAB (2021),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - MATLAB (2022),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - None (2020),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - None (2021),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - None (2022),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - Other (2020),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - Other (2021),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - Other (2022),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - PHP (2022),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - Python (2020),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - Python (2021),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - Python (2022),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - R (2020),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - R (2021),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - R (2022),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - SQL (2020),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - SQL (2021),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - SQL (2022),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - Swift (2020),34,Programming language
+What programming languages do you use on a regular basis? (Select all that apply) - Selected Choice - Swift (2021),34,Programming language
+"Which categories of automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice - Automated data augmentation (e.g. imgaug, albumentations) (2020)",35,Learning new automated machine learning tools categories
+"Which categories of automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice - Automated data augmentation (e.g. imgaug, albumentations) (2021)",35,Learning new automated machine learning tools categories
+"Which categories of automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice - Automated feature engineering/selection (e.g. tpot, boruta_py) (2020)",35,Learning new automated machine learning tools categories
+"Which categories of automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice - Automated feature engineering/selection (e.g. tpot, boruta_py) (2021)",35,Learning new automated machine learning tools categories
+"Which categories of automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice - Automated hyperparameter tuning (e.g. hyperopt, ray.tune, Vizier) (2020)",35,Learning new automated machine learning tools categories
+"Which categories of automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice - Automated hyperparameter tuning (e.g. hyperopt, ray.tune, Vizier) (2021)",35,Learning new automated machine learning tools categories
+"Which categories of automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice - Automated model architecture searches (e.g. darts, enas) (2020)",35,Learning new automated machine learning tools categories
+"Which categories of automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice - Automated model architecture searches (e.g. darts, enas) (2021)",35,Learning new automated machine learning tools categories
+"Which categories of automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice - Automated model selection (e.g. auto-sklearn, xcessiv) (2020)",35,Learning new automated machine learning tools categories
+"Which categories of automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice - Automated model selection (e.g. auto-sklearn, xcessiv) (2021)",35,Learning new automated machine learning tools categories
+"Which categories of automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice - Automation of full ML pipelines (e.g. Google Cloud AutoML, H20 Driverless AI) (2020)",35,Learning new automated machine learning tools categories
+"Which categories of automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice - Automation of full ML pipelines (e.g. Google Cloud AutoML, H2O Driverless AI) (2021)",35,Learning new automated machine learning tools categories
+Which categories of automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice - None (2020),35,Learning new automated machine learning tools categories
+Which categories of automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice - None (2021),35,Learning new automated machine learning tools categories
+Which categories of automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice - Other (2020),35,Learning new automated machine learning tools categories
+Which categories of automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice - Other (2021),35,Learning new automated machine learning tools categories
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Amazon Athena  (2020)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Amazon Aurora  (2021)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Amazon DynamoDB  (2020)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Amazon DynamoDB  (2021)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Amazon RDS  (2021)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Amazon Redshift  (2020)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Amazon Redshift  (2021)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Google Cloud BigQuery  (2020)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Google Cloud BigQuery  (2021)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Google Cloud BigTable  (2021)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Google Cloud Firestore  (2020)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Google Cloud Firestore  (2021)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Google Cloud Spanner  (2021)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Google Cloud SQL  (2020)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Google Cloud SQL  (2021)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - IBM Db2  (2020)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - IBM Db2  (2021)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Microsoft Access  (2020)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Microsoft Azure Cosmos DB  (2021)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Microsoft Azure Data Lake Storage  (2020)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Microsoft Azure SQL Database  (2021)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Microsoft SQL Server  (2020)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Microsoft SQL Server  (2021)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - MongoDB  (2020)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - MongoDB  (2021)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - MySQL  (2020)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - MySQL  (2021)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - None (2020)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - None (2021)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Oracle Database  (2020)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Oracle Database  (2021)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Other (2020)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Other (2021)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - PostgreSQL  (2021)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - PostgresSQL  (2020)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Snowflake  (2020)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Snowflake  (2021)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - SQLite  (2020)",36,Learning new big data products
+"Which of the following big data products (relational databases, data warehouses, data lakes, or similar) do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - SQLite  (2021)",36,Learning new big data products
+Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  Alibaba Cloud  (2020),37,Cloud computing platform
+Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  Alibaba Cloud  (2021),37,Cloud computing platform
+Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  Amazon Web Services (AWS)  (2020),37,Cloud computing platform
+Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  Amazon Web Services (AWS)  (2021),37,Cloud computing platform
+Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  Google Cloud Platform (GCP)  (2020),37,Cloud computing platform
+Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  Google Cloud Platform (GCP)  (2021),37,Cloud computing platform
+Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  IBM Cloud / Red Hat  (2020),37,Cloud computing platform
+Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  IBM Cloud / Red Hat  (2021),37,Cloud computing platform
+Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  Microsoft Azure  (2020),37,Cloud computing platform
+Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  Microsoft Azure  (2021),37,Cloud computing platform
+Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  Oracle Cloud  (2020),37,Cloud computing platform
+Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  Oracle Cloud  (2021),37,Cloud computing platform
+Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  Salesforce Cloud  (2020),37,Cloud computing platform
+Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  Salesforce Cloud  (2021),37,Cloud computing platform
+Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  SAP Cloud  (2020),37,Cloud computing platform
+Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  SAP Cloud  (2021),37,Cloud computing platform
+Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  Tencent Cloud  (2020),37,Cloud computing platform
+Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  Tencent Cloud  (2021),37,Cloud computing platform
+Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  VMware Cloud  (2020),37,Cloud computing platform
+Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice -  VMware Cloud  (2021),37,Cloud computing platform
+Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice - None (2020),37,Cloud computing platform
+Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice - None (2021),37,Cloud computing platform
+Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice - Other (2020),37,Cloud computing platform
+Which of the following cloud computing platforms do you use on a regular basis? (Select all that apply) - Selected Choice - Other (2021),37,Cloud computing platform
+Which of the following cloud computing platforms do you use? (Select all that apply) - Selected Choice -  Alibaba Cloud  (2022),37,Cloud computing platform
+Which of the following cloud computing platforms do you use? (Select all that apply) - Selected Choice -  Amazon Web Services (AWS)  (2022),37,Cloud computing platform
+Which of the following cloud computing platforms do you use? (Select all that apply) - Selected Choice -  Google Cloud Platform (GCP)  (2022),37,Cloud computing platform
+Which of the following cloud computing platforms do you use? (Select all that apply) - Selected Choice -  Huawei Cloud  (2022),37,Cloud computing platform
+Which of the following cloud computing platforms do you use? (Select all that apply) - Selected Choice -  IBM Cloud / Red Hat  (2022),37,Cloud computing platform
+Which of the following cloud computing platforms do you use? (Select all that apply) - Selected Choice -  Microsoft Azure  (2022),37,Cloud computing platform
+Which of the following cloud computing platforms do you use? (Select all that apply) - Selected Choice -  Oracle Cloud  (2022),37,Cloud computing platform
+Which of the following cloud computing platforms do you use? (Select all that apply) - Selected Choice -  SAP Cloud  (2022),37,Cloud computing platform
+Which of the following cloud computing platforms do you use? (Select all that apply) - Selected Choice -  Tencent Cloud  (2022),37,Cloud computing platform
+Which of the following cloud computing platforms do you use? (Select all that apply) - Selected Choice -  VMware Cloud  (2022),37,Cloud computing platform
+Which of the following cloud computing platforms do you use? (Select all that apply) - Selected Choice - None (2022),37,Cloud computing platform
+Which of the following cloud computing platforms do you use? (Select all that apply) - Selected Choice - Other (2022),37,Cloud computing platform
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Notepad++   (2020),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Notepad++   (2021),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Notepad++   (2022),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Spyder   (2020),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Spyder   (2021),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Spyder   (2022),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Sublime Text   (2020),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Sublime Text   (2021),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Sublime Text   (2022),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Vim / Emacs   (2020),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Vim / Emacs   (2021),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -   Vim / Emacs   (2022),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -  Jupyter Notebook (2021),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -  Jupyter Notebook (2022),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -  MATLAB  (2020),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -  MATLAB  (2021),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -  MATLAB  (2022),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -  PyCharm  (2020),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -  PyCharm  (2021),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -  PyCharm  (2022),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -  RStudio  (2020),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -  RStudio  (2021),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -  RStudio  (2022),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -  Visual Studio  (2021),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -  Visual Studio  (2022),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -  Visual Studio / Visual Studio Code  (2020),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -  Visual Studio Code (VSCode)  (2021),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice -  Visual Studio Code (VSCode)  (2022),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice - Click to write Choice 13 (2020),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice - IntelliJ (2022),38,IDE
+"Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice - Jupyter (JupyterLab, Jupyter Notebooks, etc)  (2020)",38,IDE
+"Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice - Jupyter (JupyterLab, Jupyter Notebooks, etc)  (2021)",38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice - JupyterLab  (2022),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice - None (2020),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice - None (2021),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice - None (2022),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice - Other (2020),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice - Other (2021),38,IDE
+Which of the following integrated development environments (IDE's) do you use on a regular basis?  (Select all that apply) - Selected Choice - Other (2022),38,IDE
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -   Scikit-learn  (2020),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -   Scikit-learn  (2021),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -   Scikit-learn  (2022),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -   TensorFlow  (2020),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -   TensorFlow  (2021),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -   TensorFlow  (2022),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  Caret  (2020),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  Caret  (2021),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  Caret  (2022),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  CatBoost  (2020),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  CatBoost  (2021),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  CatBoost  (2022),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  Fast.ai  (2020),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  Fast.ai  (2021),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  Fast.ai  (2022),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  H2O 3  (2020),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  H2O 3  (2021),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  Huggingface  (2021),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  Huggingface  (2022),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  JAX  (2020),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  JAX  (2021),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  JAX  (2022),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  Keras  (2020),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  Keras  (2021),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  Keras  (2022),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  LightGBM  (2020),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  LightGBM  (2021),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  LightGBM  (2022),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  MXNet  (2020),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  MXNet  (2021),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  Prophet  (2020),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  Prophet  (2021),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  PyTorch  (2020),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  PyTorch  (2021),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  PyTorch  (2022),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  PyTorch Lightning  (2021),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  PyTorch Lightning  (2022),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  Tidymodels  (2020),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  Tidymodels  (2021),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  Tidymodels  (2022),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  Xgboost  (2020),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  Xgboost  (2021),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice -  Xgboost  (2022),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice - None (2020),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice - None (2021),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice - None (2022),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice - Other (2020),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice - Other (2021),39,Machine learning frameworks
+Which of the following machine learning frameworks do you use on a regular basis? (Select all that apply) - Selected Choice - Other (2022),39,Machine learning frameworks
+"Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Autoencoder Networks (DAE, VAE, etc) (2022)",40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Bayesian Approaches (2020),40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Bayesian Approaches (2021),40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Bayesian Approaches (2022),40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Convolutional Neural Networks (2020),40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Convolutional Neural Networks (2021),40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Convolutional Neural Networks (2022),40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Decision Trees or Random Forests (2020),40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Decision Trees or Random Forests (2021),40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Decision Trees or Random Forests (2022),40,Machine learning algorithms
+"Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Dense Neural Networks (MLPs, etc) (2020)",40,Machine learning algorithms
+"Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Dense Neural Networks (MLPs, etc) (2021)",40,Machine learning algorithms
+"Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Dense Neural Networks (MLPs, etc) (2022)",40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Evolutionary Approaches (2020),40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Evolutionary Approaches (2021),40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Evolutionary Approaches (2022),40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Generative Adversarial Networks (2020),40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Generative Adversarial Networks (2021),40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Generative Adversarial Networks (2022),40,Machine learning algorithms
+"Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Gradient Boosting Machines (xgboost, lightgbm, etc) (2020)",40,Machine learning algorithms
+"Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Gradient Boosting Machines (xgboost, lightgbm, etc) (2021)",40,Machine learning algorithms
+"Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Gradient Boosting Machines (xgboost, lightgbm, etc) (2022)",40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Graph Neural Networks (2022),40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Linear or Logistic Regression (2020),40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Linear or Logistic Regression (2021),40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Linear or Logistic Regression (2022),40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - None (2020),40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - None (2021),40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - None (2022),40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Other (2020),40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Other (2021),40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Other (2022),40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Recurrent Neural Networks (2020),40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Recurrent Neural Networks (2021),40,Machine learning algorithms
+Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Recurrent Neural Networks (2022),40,Machine learning algorithms
+"Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Transformer Networks (BERT, gpt-3, etc) (2020)",40,Machine learning algorithms
+"Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Transformer Networks (BERT, gpt-3, etc) (2021)",40,Machine learning algorithms
+"Which of the following ML algorithms do you use on a regular basis? (Select all that apply): - Selected Choice - Transformer Networks (BERT, gpt-3, etc) (2022)",40,Machine learning algorithms
+"Which of the following natural language processing (NLP) methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Contextualized embeddings (ELMo, CoVe) (2020)",41,NLP methods
+"Which of the following natural language processing (NLP) methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Contextualized embeddings (ELMo, CoVe) (2021)",41,NLP methods
+"Which of the following natural language processing (NLP) methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Contextualized embeddings (ELMo, CoVe) (2022)",41,NLP methods
+"Which of the following natural language processing (NLP) methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Encoder-decoder models (seq2seq, vanilla transformers) (2022)",41,NLP methods
+"Which of the following natural language processing (NLP) methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Encoder-decorder models (seq2seq, vanilla transformers) (2020)",41,NLP methods
+"Which of the following natural language processing (NLP) methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Encoder-decorder models (seq2seq, vanilla transformers) (2021)",41,NLP methods
+Which of the following natural language processing (NLP) methods do you use on a regular basis?  (Select all that apply) - Selected Choice - None (2020),41,NLP methods
+Which of the following natural language processing (NLP) methods do you use on a regular basis?  (Select all that apply) - Selected Choice - None (2021),41,NLP methods
+Which of the following natural language processing (NLP) methods do you use on a regular basis?  (Select all that apply) - Selected Choice - None (2022),41,NLP methods
+Which of the following natural language processing (NLP) methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Other (2020),41,NLP methods
+Which of the following natural language processing (NLP) methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Other (2021),41,NLP methods
+Which of the following natural language processing (NLP) methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Other (2022),41,NLP methods
+"Which of the following natural language processing (NLP) methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Transformer language models (GPT-3, BERT, XLnet, etc) (2020)",41,NLP methods
+"Which of the following natural language processing (NLP) methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Transformer language models (GPT-3, BERT, XLnet, etc) (2021)",41,NLP methods
+"Which of the following natural language processing (NLP) methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Transformer language models (GPT-3, BERT, XLnet, etc) (2022)",41,NLP methods
+"Which of the following natural language processing (NLP) methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Word embeddings/vectors (GLoVe, fastText, word2vec) (2020)",41,NLP methods
+"Which of the following natural language processing (NLP) methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Word embeddings/vectors (GLoVe, fastText, word2vec) (2021)",41,NLP methods
+"Which of the following natural language processing (NLP) methods do you use on a regular basis?  (Select all that apply) - Selected Choice - Word embeddings/vectors (GLoVe, fastText, word2vec) (2022)",41,NLP methods
+Do you use any of the following products to serve your machine learning models?  (Select all that apply) - Selected Choice -  BentoML  (2022),42,Machine learning model server
+Do you use any of the following products to serve your machine learning models?  (Select all that apply) - Selected Choice -  KServe  (2022),42,Machine learning model server
+Do you use any of the following products to serve your machine learning models?  (Select all that apply) - Selected Choice -  MLflow  (2022),42,Machine learning model server
+Do you use any of the following products to serve your machine learning models?  (Select all that apply) - Selected Choice -  Multi Model Server (MMS)  (2022),42,Machine learning model server
+Do you use any of the following products to serve your machine learning models?  (Select all that apply) - Selected Choice -  ONNX Runtime  (2022),42,Machine learning model server
+Do you use any of the following products to serve your machine learning models?  (Select all that apply) - Selected Choice -  OpenVINO Model Server  (2022),42,Machine learning model server
+Do you use any of the following products to serve your machine learning models?  (Select all that apply) - Selected Choice -  Seldon Core  (2022),42,Machine learning model server
+Do you use any of the following products to serve your machine learning models?  (Select all that apply) - Selected Choice -  TensorFlow Extended (TFX)  (2022),42,Machine learning model server
+Do you use any of the following products to serve your machine learning models?  (Select all that apply) - Selected Choice -  TorchServe  (2022),42,Machine learning model server
+Do you use any of the following products to serve your machine learning models?  (Select all that apply) - Selected Choice -  Triton Inference Server  (2022),42,Machine learning model server
+Do you use any of the following products to serve your machine learning models?  (Select all that apply) - Selected Choice - None (2022),42,Machine learning model server
+Do you use any of the following products to serve your machine learning models?  (Select all that apply) - Selected Choice - Other (2022),42,Machine learning model server
+"In the next 2 years, do you hope to become more familiar with any of these specific cloud computing products? (Select all that apply) - Selected Choice -  Amazon EC2  (2020)",43,Learning new cloud computing products
+"In the next 2 years, do you hope to become more familiar with any of these specific cloud computing products? (Select all that apply) - Selected Choice -  Amazon Elastic Compute Cloud (EC2)  (2021)",43,Learning new cloud computing products
+"In the next 2 years, do you hope to become more familiar with any of these specific cloud computing products? (Select all that apply) - Selected Choice -  Amazon Elastic Container Service  (2020)",43,Learning new cloud computing products
+"In the next 2 years, do you hope to become more familiar with any of these specific cloud computing products? (Select all that apply) - Selected Choice -  AWS Lambda  (2020)",43,Learning new cloud computing products
+"In the next 2 years, do you hope to become more familiar with any of these specific cloud computing products? (Select all that apply) - Selected Choice -  Azure Cloud Services  (2020)",43,Learning new cloud computing products
+"In the next 2 years, do you hope to become more familiar with any of these specific cloud computing products? (Select all that apply) - Selected Choice -  Azure Functions  (2020)",43,Learning new cloud computing products
+"In the next 2 years, do you hope to become more familiar with any of these specific cloud computing products? (Select all that apply) - Selected Choice -  Google Cloud App Engine  (2020)",43,Learning new cloud computing products
+"In the next 2 years, do you hope to become more familiar with any of these specific cloud computing products? (Select all that apply) - Selected Choice -  Google Cloud Compute Engine  (2020)",43,Learning new cloud computing products
+"In the next 2 years, do you hope to become more familiar with any of these specific cloud computing products? (Select all that apply) - Selected Choice -  Google Cloud Compute Engine  (2021)",43,Learning new cloud computing products
+"In the next 2 years, do you hope to become more familiar with any of these specific cloud computing products? (Select all that apply) - Selected Choice -  Google Cloud Functions  (2020)",43,Learning new cloud computing products
+"In the next 2 years, do you hope to become more familiar with any of these specific cloud computing products? (Select all that apply) - Selected Choice -  Google Cloud Run  (2020)",43,Learning new cloud computing products
+"In the next 2 years, do you hope to become more familiar with any of these specific cloud computing products? (Select all that apply) - Selected Choice -  Microsoft Azure Container Instances  (2020)",43,Learning new cloud computing products
+"In the next 2 years, do you hope to become more familiar with any of these specific cloud computing products? (Select all that apply) - Selected Choice -  Microsoft Azure Virtual Machines  (2021)",43,Learning new cloud computing products
+"In the next 2 years, do you hope to become more familiar with any of these specific cloud computing products? (Select all that apply) - Selected Choice - None (2020)",43,Learning new cloud computing products
+"In the next 2 years, do you hope to become more familiar with any of these specific cloud computing products? (Select all that apply) - Selected Choice - None (2021)",43,Learning new cloud computing products
+"In the next 2 years, do you hope to become more familiar with any of these specific cloud computing products? (Select all that apply) - Selected Choice - Other (2020)",43,Learning new cloud computing products
+"In the next 2 years, do you hope to become more familiar with any of these specific cloud computing products? (Select all that apply) - Selected Choice - Other (2021)",43,Learning new cloud computing products
+Which of the following cloud computing platforms do you hope to become more familiar with in the next 2 years? - Selected Choice -  Alibaba Cloud  (2020),44,Learning new cloud computing platform
+Which of the following cloud computing platforms do you hope to become more familiar with in the next 2 years? - Selected Choice -  Alibaba Cloud  (2021),44,Learning new cloud computing platform
+Which of the following cloud computing platforms do you hope to become more familiar with in the next 2 years? - Selected Choice -  Amazon Web Services (AWS)  (2020),44,Learning new cloud computing platform
+Which of the following cloud computing platforms do you hope to become more familiar with in the next 2 years? - Selected Choice -  Amazon Web Services (AWS)  (2021),44,Learning new cloud computing platform
+Which of the following cloud computing platforms do you hope to become more familiar with in the next 2 years? - Selected Choice -  Google Cloud Platform (GCP)  (2020),44,Learning new cloud computing platform
+Which of the following cloud computing platforms do you hope to become more familiar with in the next 2 years? - Selected Choice -  Google Cloud Platform (GCP)  (2021),44,Learning new cloud computing platform
+Which of the following cloud computing platforms do you hope to become more familiar with in the next 2 years? - Selected Choice -  IBM Cloud / Red Hat  (2020),44,Learning new cloud computing platform
+Which of the following cloud computing platforms do you hope to become more familiar with in the next 2 years? - Selected Choice -  IBM Cloud / Red Hat  (2021),44,Learning new cloud computing platform
+Which of the following cloud computing platforms do you hope to become more familiar with in the next 2 years? - Selected Choice -  Microsoft Azure  (2020),44,Learning new cloud computing platform
+Which of the following cloud computing platforms do you hope to become more familiar with in the next 2 years? - Selected Choice -  Microsoft Azure  (2021),44,Learning new cloud computing platform
+Which of the following cloud computing platforms do you hope to become more familiar with in the next 2 years? - Selected Choice -  Oracle Cloud  (2020),44,Learning new cloud computing platform
+Which of the following cloud computing platforms do you hope to become more familiar with in the next 2 years? - Selected Choice -  Oracle Cloud  (2021),44,Learning new cloud computing platform
+Which of the following cloud computing platforms do you hope to become more familiar with in the next 2 years? - Selected Choice -  Salesforce Cloud  (2020),44,Learning new cloud computing platform
+Which of the following cloud computing platforms do you hope to become more familiar with in the next 2 years? - Selected Choice -  Salesforce Cloud  (2021),44,Learning new cloud computing platform
+Which of the following cloud computing platforms do you hope to become more familiar with in the next 2 years? - Selected Choice -  SAP Cloud  (2020),44,Learning new cloud computing platform
+Which of the following cloud computing platforms do you hope to become more familiar with in the next 2 years? - Selected Choice -  SAP Cloud  (2021),44,Learning new cloud computing platform
+Which of the following cloud computing platforms do you hope to become more familiar with in the next 2 years? - Selected Choice -  Tencent Cloud  (2020),44,Learning new cloud computing platform
+Which of the following cloud computing platforms do you hope to become more familiar with in the next 2 years? - Selected Choice -  Tencent Cloud  (2021),44,Learning new cloud computing platform
+Which of the following cloud computing platforms do you hope to become more familiar with in the next 2 years? - Selected Choice -  VMware Cloud  (2020),44,Learning new cloud computing platform
+Which of the following cloud computing platforms do you hope to become more familiar with in the next 2 years? - Selected Choice -  VMware Cloud  (2021),44,Learning new cloud computing platform
+Which of the following cloud computing platforms do you hope to become more familiar with in the next 2 years? - Selected Choice - None (2020),44,Learning new cloud computing platform
+Which of the following cloud computing platforms do you hope to become more familiar with in the next 2 years? - Selected Choice - None (2021),44,Learning new cloud computing platform
+Which of the following cloud computing platforms do you hope to become more familiar with in the next 2 years? - Selected Choice - Other (2020),44,Learning new cloud computing platform
+Which of the following cloud computing platforms do you hope to become more familiar with in the next 2 years? - Selected Choice - Other (2021),44,Learning new cloud computing platform
+Do you use any of the following responsible or ethical AI products in your machine learning practices?  (Select all that apply) - Selected Choice -  Aequitas  (2022),45,Ethical AI products
+"Do you use any of the following responsible or ethical AI products in your machine learning practices?  (Select all that apply) - Selected Choice -  Amazon AI Ethics Tools (Clarify, A2I, etc)  (2022)",45,Ethical AI products
+Do you use any of the following responsible or ethical AI products in your machine learning practices?  (Select all that apply) - Selected Choice -  Audit-AI  (2022),45,Ethical AI products
+"Do you use any of the following responsible or ethical AI products in your machine learning practices?  (Select all that apply) - Selected Choice -  Google Responsible AI Toolkit (LIT, What-if, Fairness Indicator, etc)  (2022)",45,Ethical AI products
+"Do you use any of the following responsible or ethical AI products in your machine learning practices?  (Select all that apply) - Selected Choice -  IBM AI Ethics tools (AI Fairness 360, Adversarial Robustness Toolbox, etc  (2022)",45,Ethical AI products
+"Do you use any of the following responsible or ethical AI products in your machine learning practices?  (Select all that apply) - Selected Choice -  Microsoft Responsible AI Resources (Fairlearn, Counterfit, InterpretML, etc)  (2022)",45,Ethical AI products
+Do you use any of the following responsible or ethical AI products in your machine learning practices?  (Select all that apply) - Selected Choice -  The LinkedIn Fairness Toolkit (LiFT)  (2022),45,Ethical AI products
+Do you use any of the following responsible or ethical AI products in your machine learning practices?  (Select all that apply) - Selected Choice - None (2022),45,Ethical AI products
+Do you use any of the following responsible or ethical AI products in your machine learning practices?  (Select all that apply) - Selected Choice - Other (2022),45,Ethical AI products
+"In the next 2 years, do you hope to become more familiar with any of these managed machine learning products? (Select all that apply) - Selected Choice -  Alteryx (2021)",46,Learning new managed machine learning products
+"In the next 2 years, do you hope to become more familiar with any of these managed machine learning products? (Select all that apply) - Selected Choice -  Amazon SageMaker  (2021)",46,Learning new managed machine learning products
+"In the next 2 years, do you hope to become more familiar with any of these managed machine learning products? (Select all that apply) - Selected Choice -  Azure Machine Learning Studio  (2021)",46,Learning new managed machine learning products
+"In the next 2 years, do you hope to become more familiar with any of these managed machine learning products? (Select all that apply) - Selected Choice -  Databricks (2021)",46,Learning new managed machine learning products
+"In the next 2 years, do you hope to become more familiar with any of these managed machine learning products? (Select all that apply) - Selected Choice -  Dataiku (2021)",46,Learning new managed machine learning products
+"In the next 2 years, do you hope to become more familiar with any of these managed machine learning products? (Select all that apply) - Selected Choice -  DataRobot (2021)",46,Learning new managed machine learning products
+"In the next 2 years, do you hope to become more familiar with any of these managed machine learning products? (Select all that apply) - Selected Choice -  Google Cloud Vertex AI (2021)",46,Learning new managed machine learning products
+"In the next 2 years, do you hope to become more familiar with any of these managed machine learning products? (Select all that apply) - Selected Choice -  Rapidminer (2021)",46,Learning new managed machine learning products
+"In the next 2 years, do you hope to become more familiar with any of these managed machine learning products? (Select all that apply) - Selected Choice - None (2021)",46,Learning new managed machine learning products
+"In the next 2 years, do you hope to become more familiar with any of these managed machine learning products? (Select all that apply) - Selected Choice - Other (2021)",46,Learning new managed machine learning products
+"In the next 2 years, do you hope to become more familiar with any of these specific machine learning products? (Select all that apply) - Selected Choice -  Amazon Forecast  (2020)",46,Learning new managed machine learning products
+"In the next 2 years, do you hope to become more familiar with any of these specific machine learning products? (Select all that apply) - Selected Choice -  Amazon Rekognition  (2020)",46,Learning new managed machine learning products
+"In the next 2 years, do you hope to become more familiar with any of these specific machine learning products? (Select all that apply) - Selected Choice -  Amazon SageMaker  (2020)",46,Learning new managed machine learning products
+"In the next 2 years, do you hope to become more familiar with any of these specific machine learning products? (Select all that apply) - Selected Choice -  Azure Cognitive Services  (2020)",46,Learning new managed machine learning products
+"In the next 2 years, do you hope to become more familiar with any of these specific machine learning products? (Select all that apply) - Selected Choice -  Azure Machine Learning Studio  (2020)",46,Learning new managed machine learning products
+"In the next 2 years, do you hope to become more familiar with any of these specific machine learning products? (Select all that apply) - Selected Choice -  Google Cloud AI Platform / Google Cloud ML Engine (2020)",46,Learning new managed machine learning products
+"In the next 2 years, do you hope to become more familiar with any of these specific machine learning products? (Select all that apply) - Selected Choice -  Google Cloud Natural Language  (2020)",46,Learning new managed machine learning products
+"In the next 2 years, do you hope to become more familiar with any of these specific machine learning products? (Select all that apply) - Selected Choice -  Google Cloud Video AI  (2020)",46,Learning new managed machine learning products
+"In the next 2 years, do you hope to become more familiar with any of these specific machine learning products? (Select all that apply) - Selected Choice -  Google Cloud Vision AI  (2020)",46,Learning new managed machine learning products
+"In the next 2 years, do you hope to become more familiar with any of these specific machine learning products? (Select all that apply) - Selected Choice - None (2020)",46,Learning new managed machine learning products
+"In the next 2 years, do you hope to become more familiar with any of these specific machine learning products? (Select all that apply) - Selected Choice - Other (2020)",46,Learning new managed machine learning products
+"Have you ever published any academic research (papers, preprints, conference proceedings, etc)? (2022)",47,Academic research publication
+In which country do you currently reside? (2020),48,Country
+In which country do you currently reside? (2021),48,Country
+In which country do you currently reside? (2022),48,Country
+In what industry is your current employer/contract (or your most recent employer if retired)? - Selected Choice (2021),49,Industry
+In what industry is your current employer/contract (or your most recent employer if retired)? - Selected Choice (2022),49,Industry
+"In the next 2 years, do you hope to become more familiar with any of these specific data storage products? (Select all that apply) - Selected Choice -  Amazon Elastic File System (EFS)   (2021)",50,Learning new data storage products
+"In the next 2 years, do you hope to become more familiar with any of these specific data storage products? (Select all that apply) - Selected Choice -  Amazon Simple Storage Service (S3)   (2021)",50,Learning new data storage products
+"In the next 2 years, do you hope to become more familiar with any of these specific data storage products? (Select all that apply) - Selected Choice -  Google Cloud Filestore  (2021)",50,Learning new data storage products
+"In the next 2 years, do you hope to become more familiar with any of these specific data storage products? (Select all that apply) - Selected Choice - Google Cloud Storage (GCS)    (2021)",50,Learning new data storage products
+"In the next 2 years, do you hope to become more familiar with any of these specific data storage products? (Select all that apply) - Selected Choice - Microsoft Azure Data Lake Storage  (2021)",50,Learning new data storage products
+"In the next 2 years, do you hope to become more familiar with any of these specific data storage products? (Select all that apply) - Selected Choice - Microsoft Azure Disk Storage  (2021)",50,Learning new data storage products
+"In the next 2 years, do you hope to become more familiar with any of these specific data storage products? (Select all that apply) - Selected Choice - No / None (2021)",50,Learning new data storage products
+"In the next 2 years, do you hope to become more familiar with any of these specific data storage products? (Select all that apply) - Selected Choice - Other (2021)",50,Learning new data storage products
+"In the next 2 years, do you hope to become more familiar with any of these tools for managing ML experiments? (Select all that apply) - Selected Choice -  ClearML  (2021)",51,Learning new ML experiments managing tools
+"In the next 2 years, do you hope to become more familiar with any of these tools for managing ML experiments? (Select all that apply) - Selected Choice -  Comet.ml  (2020)",51,Learning new ML experiments managing tools
+"In the next 2 years, do you hope to become more familiar with any of these tools for managing ML experiments? (Select all that apply) - Selected Choice -  Comet.ml  (2021)",51,Learning new ML experiments managing tools
+"In the next 2 years, do you hope to become more familiar with any of these tools for managing ML experiments? (Select all that apply) - Selected Choice -  Domino Model Monitor  (2020)",51,Learning new ML experiments managing tools
+"In the next 2 years, do you hope to become more familiar with any of these tools for managing ML experiments? (Select all that apply) - Selected Choice -  Domino Model Monitor  (2021)",51,Learning new ML experiments managing tools
+"In the next 2 years, do you hope to become more familiar with any of these tools for managing ML experiments? (Select all that apply) - Selected Choice -  Guild.ai  (2020)",51,Learning new ML experiments managing tools
+"In the next 2 years, do you hope to become more familiar with any of these tools for managing ML experiments? (Select all that apply) - Selected Choice -  Guild.ai  (2021)",51,Learning new ML experiments managing tools
+"In the next 2 years, do you hope to become more familiar with any of these tools for managing ML experiments? (Select all that apply) - Selected Choice -  MLflow  (2021)",51,Learning new ML experiments managing tools
+"In the next 2 years, do you hope to become more familiar with any of these tools for managing ML experiments? (Select all that apply) - Selected Choice -  Neptune.ai  (2020)",51,Learning new ML experiments managing tools
+"In the next 2 years, do you hope to become more familiar with any of these tools for managing ML experiments? (Select all that apply) - Selected Choice -  Neptune.ai  (2021)",51,Learning new ML experiments managing tools
+"In the next 2 years, do you hope to become more familiar with any of these tools for managing ML experiments? (Select all that apply) - Selected Choice -  Polyaxon  (2020)",51,Learning new ML experiments managing tools
+"In the next 2 years, do you hope to become more familiar with any of these tools for managing ML experiments? (Select all that apply) - Selected Choice -  Polyaxon  (2021)",51,Learning new ML experiments managing tools
+"In the next 2 years, do you hope to become more familiar with any of these tools for managing ML experiments? (Select all that apply) - Selected Choice -  Sacred + Omniboard  (2020)",51,Learning new ML experiments managing tools
+"In the next 2 years, do you hope to become more familiar with any of these tools for managing ML experiments? (Select all that apply) - Selected Choice -  Sacred + Omniboard  (2021)",51,Learning new ML experiments managing tools
+"In the next 2 years, do you hope to become more familiar with any of these tools for managing ML experiments? (Select all that apply) - Selected Choice -  TensorBoard  (2020)",51,Learning new ML experiments managing tools
+"In the next 2 years, do you hope to become more familiar with any of these tools for managing ML experiments? (Select all that apply) - Selected Choice -  TensorBoard  (2021)",51,Learning new ML experiments managing tools
+"In the next 2 years, do you hope to become more familiar with any of these tools for managing ML experiments? (Select all that apply) - Selected Choice -  Trains  (2020)",51,Learning new ML experiments managing tools
+"In the next 2 years, do you hope to become more familiar with any of these tools for managing ML experiments? (Select all that apply) - Selected Choice -  Weights & Biases  (2020)",51,Learning new ML experiments managing tools
+"In the next 2 years, do you hope to become more familiar with any of these tools for managing ML experiments? (Select all that apply) - Selected Choice -  Weights & Biases  (2021)",51,Learning new ML experiments managing tools
+"In the next 2 years, do you hope to become more familiar with any of these tools for managing ML experiments? (Select all that apply) - Selected Choice - None (2020)",51,Learning new ML experiments managing tools
+"In the next 2 years, do you hope to become more familiar with any of these tools for managing ML experiments? (Select all that apply) - Selected Choice - None (2021)",51,Learning new ML experiments managing tools
+"In the next 2 years, do you hope to become more familiar with any of these tools for managing ML experiments? (Select all that apply) - Selected Choice - Other (2020)",51,Learning new ML experiments managing tools
+"In the next 2 years, do you hope to become more familiar with any of these tools for managing ML experiments? (Select all that apply) - Selected Choice - Other (2021)",51,Learning new ML experiments managing tools
+What is the primary tool that you use at work or school to analyze data? (Include text response) - Selected Choice (2020),52,Main data analysis tool
+What is the primary tool that you use at work or school to analyze data? (Include text response) - Selected Choice (2021),52,Main data analysis tool
+"What products or platforms did you find to be most helpful when you first started studying data science?  (Select all that apply) - Selected Choice - Kaggle (notebooks, competitions, etc) (2022)",53,Most helpful data science learning platform
+What products or platforms did you find to be most helpful when you first started studying data science?  (Select all that apply) - Selected Choice - None / I do not study data science (2022),53,Most helpful data science learning platform
+"What products or platforms did you find to be most helpful when you first started studying data science?  (Select all that apply) - Selected Choice - Online courses (Coursera, EdX, etc) (2022)",53,Most helpful data science learning platform
+What products or platforms did you find to be most helpful when you first started studying data science?  (Select all that apply) - Selected Choice - Other (2022),53,Most helpful data science learning platform
+"What products or platforms did you find to be most helpful when you first started studying data science?  (Select all that apply) - Selected Choice - Social media platforms (Reddit, Twitter, etc) (2022)",53,Most helpful data science learning platform
+What products or platforms did you find to be most helpful when you first started studying data science?  (Select all that apply) - Selected Choice - University courses (2022),53,Most helpful data science learning platform
+"What products or platforms did you find to be most helpful when you first started studying data science?  (Select all that apply) - Selected Choice - Video platforms (YouTube, Twitch, etc) (2022)",53,Most helpful data science learning platform
+"Of the cloud platforms that you are familiar with, which has the best developer experience (most enjoyable to use)? - Selected Choice (2021)",54,Cloud platform with best developer experience
+"Of the cloud platforms that you are familiar with, which has the best developer experience (most enjoyable to use)? - Selected Choice (2022)",54,Cloud platform with best developer experience
+What programming language would you recommend an aspiring data scientist to learn first? - Selected Choice (2020),55,Recommended first programming language for data science
+What programming language would you recommend an aspiring data scientist to learn first? - Selected Choice (2021),55,Recommended first programming language for data science
+What type of computing platform do you use most often for your data science projects? - Selected Choice (2020),56,Computing platform for data science projects
+What type of computing platform do you use most often for your data science projects? - Selected Choice (2021),56,Computing platform for data science projects
+"Which of the following big data products (relational database, data warehouse, data lake, or similar) do you use most often? - Selected Choice (2020)",57,Big data products
+"Which of the following big data products (relational database, data warehouse, data lake, or similar) do you use most often? - Selected Choice (2021)",57,Big data products
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Alteryx  (2020),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Alteryx  (2021),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Amazon QuickSight (2020),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Amazon QuickSight (2021),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Domo (2020),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Domo (2021),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Einstein Analytics (2020),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Google Data Studio (2020),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Google Data Studio (2021),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Looker (2020),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Looker (2021),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Microsoft Azure Synapse  (2021),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Microsoft Power BI (2020),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Microsoft Power BI (2021),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - None (2020),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - None (2021),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Other (2020),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Other (2021),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Qlik (2020),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Qlik (2021),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Salesforce (2020),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Salesforce (2021),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - SAP Analytics Cloud  (2020),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - SAP Analytics Cloud  (2021),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Sisense  (2020),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Sisense  (2021),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Tableau (2020),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Tableau (2021),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Tableau CRM (2021),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - Thoughtspot  (2021),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - TIBCO Spotfire (2020),58,Learning new BI tools
+Which of the following business intelligence tools do you hope to become more familiar with in the next 2 years? (Select all that apply) - Selected Choice - TIBCO Spotfire (2021),58,Learning new BI tools
+Which of the following business intelligence tools do you use most often? - Selected Choice (2020),59,BI tools
+Which of the following business intelligence tools do you use most often? - Selected Choice (2021),59,BI tools
+Which of the following ML model hubs/repositories do you use most often? - Selected Choice (2022),60,ML model hub/repository
+Which specific automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice -   Amazon Sagemaker Autopilot  (2021),61,Learning new automated ML tools
+Which specific automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice -   Auto_ml  (2020),61,Learning new automated ML tools
+Which specific automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice -   Auto-Keras  (2020),61,Learning new automated ML tools
+Which specific automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice -   Auto-Sklearn  (2020),61,Learning new automated ML tools
+Which specific automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice -   Azure Automated Machine Learning  (2021),61,Learning new automated ML tools
+Which specific automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice -   MLbox  (2020),61,Learning new automated ML tools
+Which specific automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice -   Tpot  (2020),61,Learning new automated ML tools
+Which specific automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice -   Xcessiv  (2020),61,Learning new automated ML tools
+Which specific automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice -  Databricks AutoML  (2020),61,Learning new automated ML tools
+Which specific automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice -  Databricks AutoML  (2021),61,Learning new automated ML tools
+Which specific automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice -  DataRobot AutoML  (2020),61,Learning new automated ML tools
+Which specific automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice -  DataRobot AutoML  (2021),61,Learning new automated ML tools
+Which specific automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice -  Google Cloud AutoML  (2020),61,Learning new automated ML tools
+Which specific automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice -  Google Cloud AutoML  (2021),61,Learning new automated ML tools
+Which specific automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice -  H20 Driverless AI   (2020),61,Learning new automated ML tools
+Which specific automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice -  H2O Driverless AI   (2021),61,Learning new automated ML tools
+Which specific automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice - None (2020),61,Learning new automated ML tools
+Which specific automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice - None (2021),61,Learning new automated ML tools
+Which specific automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice - Other (2020),61,Learning new automated ML tools
+Which specific automated machine learning tools (or partial AutoML tools) do you hope to become more familiar with in the next 2 years?  (Select all that apply) - Selected Choice - Other (2021),61,Learning new automated ML tools

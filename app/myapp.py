@@ -3,9 +3,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-kaggle2020 = pd.read_csv( "https://raw.githubusercontent.com/jeffdarmawan/it5006-team-16/main/kaggle-survey-2021/kaggle_survey_2021_responses.csv" )
+kaggle2020 = pd.read_csv( "https://raw.githubusercontent.com/jeffdarmawan/it5006-team-16/main/kaggle-survey-2020/kaggle_survey_2020_responses.csv" )
 kaggle2021 = pd.read_csv( "https://raw.githubusercontent.com/jeffdarmawan/it5006-team-16/main/kaggle-survey-2021/kaggle_survey_2021_responses.csv" )
-kaggle2022 = pd.read_csv( "https://raw.githubusercontent.com/jeffdarmawan/it5006-team-16/main/kaggle-survey-2021/kaggle_survey_2021_responses.csv" )
+kaggle2022 = pd.read_csv( "https://raw.githubusercontent.com/jeffdarmawan/it5006-team-16/main/kaggle-survey-2022/kaggle_survey_2022_responses.csv" )
 
 st.write(kaggle2020.head())
 
