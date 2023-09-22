@@ -1,2 +1,2 @@
 run:
-	streamlit run app/myapp.py
+	streamlit run app/myapp.pyy
