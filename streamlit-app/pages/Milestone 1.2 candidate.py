@@ -10,7 +10,7 @@ df = pd.read_csv('clean_dataset.csv.zip')
 df.drop(columns=['Unnamed: 0'], inplace=True)
 # print(df.groupby(['Age'])['Age'].value_counts())
 sea_countries = ["Brunei","Cambodia","East Timor","Indonesia","Laos","Malaysia","Myanmar","Philippines","Singapore","Thailand","Vietnam"]
-
+print(df.columns)
 # print(df['Job_Salary'].unique())
 df = df[df['Country'].isin(sea_countries)]
 
@@ -19,30 +19,39 @@ st.title('')
 
 # Sidebar filters
 st.sidebar.header('Select Columns to Display')
+
+# Options:
+# - Salary
+# - Job
+# - Coding exp 
+# - ??
 selected_column = st.sidebar.selectbox('Select Columns',['Age', 'Gender'])
 
+start_year, end_year = st.sidebar.select_slider(
+    'Select period',
+    options=[2020, 2021, 2022],
+    value=(2020, 2022))
 
-
-
-
-# normalized = pd.DataFrame(pop_prog_lang_python)
-# normalized['Total Respondents'] = [len(pop_prog_lang_2020),len(pop_prog_lang_2021),len(pop_prog_lang_2022)]
-# normalized['Percentage - Python'] = normalized['Popular programming language - Python'] / normalized['Total Respondents'] * 100
-# normalized
-
-
+# print(start_year)
+# print(end_year)
 # Create a plot in the main section
 st.header('Filtered Data and Plot')
 
+
+selected_years = np.arange(start_year, end_year, 1)
+selected_years =  np.append(selected_years, end_year)
+# print(selected_years)
+
 if len(selected_column) > 0:
+    selected_df = df[df['Year'].isin(selected_years)]
     # df.groupby([selected_column,'Year'])[selected_column].value_counts()
-    count_data = pd.DataFrame(df.groupby([selected_column,'Year'])[selected_column].value_counts())
+    count_data = pd.DataFrame(selected_df.groupby([selected_column,'Year'])[selected_column].value_counts())
     count_by_year = pd.DataFrame(count_data.groupby(['Year']).sum())
     count_by_year.rename(columns={'count': 'total'}, inplace=True)
     count_data.reset_index(inplace=True)
     count_data = count_data.merge( count_by_year, left_on='Year', right_on='Year', how='left')
     count_data['percentage'] = count_data['count'] / count_data['total'] * 100
-
+    # print(count_data)
     # col:
     # - age
     # - year
