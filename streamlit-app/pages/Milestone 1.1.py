@@ -5,7 +5,8 @@ import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
 
-datacomb = pd.read_csv("https://raw.githubusercontent.com/jeffdarmawan/it5006-team-16/main/data_allthreeyears_combined.csv")
+datacomb = pd.read_csv("data_allthreeyears_combined.csv")
+print(datacomb.shape)
 datacomb = datacomb.rename(columns={'Gender - Selected Choice': 'Gender', 'Job_title - Selected Choice': 'Job_Title'})
 # Southeast Asia countries
 # source: https://en.wikipedia.org/wiki/Southeast_Asia
@@ -31,8 +32,6 @@ for col in datacomb.columns:
         
     
 # '''Streamlit app'''
-
-st.title('Milestone 1.1')
 
 # Sidebar filters
 st.sidebar.header('Select Feature to Display')

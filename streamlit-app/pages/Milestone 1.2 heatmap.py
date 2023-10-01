@@ -13,7 +13,7 @@ cmap = mcolors.LinearSegmentedColormap.from_list(
 [(0, 'white'), (0.5, 'blue'), (1, 'red')])
 # =======================================================
 
-datacomb = pd.read_csv("https://raw.githubusercontent.com/jeffdarmawan/it5006-team-16/main/data_allthreeyears_combined.csv")
+datacomb = pd.read_csv("data_allthreeyears_combined.csv")
 datacomb = datacomb.rename(columns={'Gender - Selected Choice': 'Gender', 'Job_title - Selected Choice': 'Job_Title'})
 # Southeast Asia countries
 # source: https://en.wikipedia.org/wiki/Southeast_Asia
@@ -53,7 +53,7 @@ for col in included_columns:
 
 print(nominal_features_order_dict)
 
-st.title('Milestone 1.2')
+# st.title('Milestone 1.2')
 st.header('Filtered Data and Plot based on SEA countries')
 
 # Sidebar filters
@@ -97,39 +97,6 @@ y_axis = st.sidebar.selectbox('Y-axis',['Coding Experience (in years)','Age','Jo
  'Money Spent on ML/Cloud Computing',
  'Times used TPU',
  'Years in ML'])
-
-# ''' For sorting of heatmap's axis for ordinal features'''------------------------------------
-
-# column order dictionary for ordinal features-----------------
-# nominal_features_order_dict = {'Job_Salary': {'$0-999':1,
-# '1,000-1,999':2,\
-# '2,000-2,999':3,\
-# '3,000-3,999':4,\
-# '4,000-4,999':5,\
-# '5,000-7,499':6,\
-# '7,500-9,999':7,\
-# '10,000-14,999':8,\
-# '15,000-19,999':9,\
-# '20,000-24,999':10,\
-# '25,000-29,999':11,\
-# '30,000-39,999':12,\
-# '40,000-49,999':13,\
-# '50,000-59,999':14,\
-# '60,000-69,999':15,\
-# '70,000-79,999':16,\
-# '80,000-89,999':17,\
-# '90,000-99,999':18,\
-# '100,000-124,999':19,\
-# '125,000-149,999':20,\
-# '150,000-199,999':21,\
-# '200,000-249,999':22,\
-# '250,000-299,999':23,\
-# '300,000-499,999':24,\
-# '$500,000-999,999':25,\
-# '> $500,000':26,\
-# '>$1,000,000':27},\
-# 'Coding Experience (in years)': {'I have never written code':1,'< 1 years':2, '1-3 years':3, '3-5 years':4, '5-10 years':5, '10-20 years':6,'20+ years':7}}
-# =========================================================
 
 is_row_select_col_2_ordinal = False
 is_col_select_col_1_ordinal = False
@@ -214,9 +181,7 @@ if year2022:
 print(x_axis)
 print(y_axis)
 
-# Altering the dataframe based on the selection made by the user
-# (ref) df_salary_exp = datacomb[['year','Job_Salary', 'Coding Experience (in years)','Location']]
-# (ref) df_salary_exp = df_salary_exp.dropna(subset=['year','Job_Salary', 'Coding Experience (in years)'], how = 'any')
+# Altering the dataframe based on the selection made by the us
 # st.write(datacomb.head(2))
 
 # 3. '''If there are 2 selected_columns ''' ----------------------------------
@@ -231,13 +196,11 @@ if len(x_axis) > 0 and len(y_axis) > 0:
 
         # Altering the dataframe to only consider the selected_years
         df_salary_exp = df_salary_exp[df_salary_exp['year'].isin(selected_years)]
-        
+
         # the code below shows a dataframe with 'x_axis' and 'y_axis'
-        # (ref) df_salary_exp_count_data = df_salary_exp.groupby(['Coding Experience (in years)', 'Job_Salary']).size().reset_index(name='count')
         df_salary_exp_count_data = df_salary_exp.groupby([y_axis, x_axis]).size().reset_index(name='count')
 
         # turn the dataframe above into a pivot table for plotting on heatmap
-        # (ref) df_salary_exp_heatmap_data = df_salary_exp_count_data.pivot_table(index='Coding Experience (in years)', columns='Job_Salary', values='count', fill_value=0)
         df_salary_exp_heatmap_data = df_salary_exp_count_data.pivot_table(index = y_axis, columns = x_axis, values='count', fill_value=0)
         # print(df_salary_exp_heatmap_data)
 
@@ -278,21 +241,16 @@ if len(x_axis) > 0 and len(y_axis) > 0:
 
         cols_to_be_unpivoted = [col for col in df_salary_exp.columns if multi_selected_col in col]
 
-        # (ref) unpivoted_df_salary_exp = pd.melt(df_salary_exp, id_vars = 'Coding Experience (in years)', value_vars = cols_to_be_unpivoted, var_name = 'Programming Language', value_name='Knows Language?')
         unpivoted_df_salary_exp = pd.melt(df_salary_exp, id_vars = single_selected_col, value_vars = cols_to_be_unpivoted, \
                                         var_name = 'Unpivoted Multi-Select Col', value_name='True for Unpivoted Multi-Select Col?')
 
-        # (ref) unpivoted_df_salary_exp = unpivoted_df_salary_exp[unpivoted_df_salary_exp['Knows Language?'].notna()]
         unpivoted_df_salary_exp = unpivoted_df_salary_exp[unpivoted_df_salary_exp['True for Unpivoted Multi-Select Col?'].notna()]
 
-        # (ref) unpivoted_df_salary_exp = unpivoted_df_salary_exp.drop(columns=['Knows Language?'])
         unpivoted_df_salary_exp = unpivoted_df_salary_exp.drop(columns=['True for Unpivoted Multi-Select Col?'])
 
-        # (ref) df_salary_count_data = unpivoted_df_salary_exp.groupby(['Coding Experience (in years)', 'Programming Language']).size().reset_index(name='count')
         df_salary_count_data = unpivoted_df_salary_exp.groupby([single_selected_col, 'Unpivoted Multi-Select Col']).size().reset_index(name='count')
 
         # generate pivot table for heatmap
-        # (ref) df_salary_exp_heatmap_data = df_salary_count_data.pivot_table(index='Coding Experience (in years)', columns='Programming Language', values='count', fill_value=0)
         df_salary_exp_heatmap_data = df_salary_count_data.pivot_table(index=single_selected_col, columns='Unpivoted Multi-Select Col', values='count', fill_value=0)
 
         # sort the pivot table if there are ordinal features in the pivot table, before plotting it on the heatmap
