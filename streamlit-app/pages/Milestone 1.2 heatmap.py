@@ -51,8 +51,6 @@ nominal_features_order_dict = {}
 for col in included_columns:
     nominal_features_order_dict[col] = dict(zip(ord_encodings[col], ord_encodings[col+'_encoded']))
 
-print(nominal_features_order_dict)
-
 # st.title('Milestone 1.2')
 st.header('Filtered Data and Plot based on SEA countries')
 
@@ -178,11 +176,7 @@ if year2021:
 if year2022:
     selected_years.append(2022)
 
-print(x_axis)
-print(y_axis)
-
 # Altering the dataframe based on the selection made by the us
-# st.write(datacomb.head(2))
 
 # 3. '''If there are 2 selected_columns ''' ----------------------------------
 if len(x_axis) > 0 and len(y_axis) > 0:
@@ -217,10 +211,39 @@ if len(x_axis) > 0 and len(y_axis) > 0:
         plt.xticks(rotation=90)
         plt.tight_layout()
         
-        st.pyplot()
+        st.pyplot(fig)
+
+        total_counts = df_salary_exp_heatmap_data_1.sum(axis=1)
+        percentage_table = df_salary_exp_heatmap_data_1.div(total_counts, axis=0) * 100
+        for column in percentage_table.columns:
+            fig, ax = plt.subplots(figsize=(20, 12))
+            plt.bar(percentage_table.index, percentage_table[column])
+            plt.xlabel(y_axis)
+            plt.ylabel('Percentage')
+            plt.title(f'{y_axis} Distribution for {column}')
+            plt.xticks(rotation=45)  # Rotate x-axis labels 
+            plt.tight_layout()
+            
+            for p in ax.patches:
+                ax.annotate(str(round(p.get_height(), 2)), (p.get_x() + p.get_width() / 2., p.get_height()), ha='center', va='center', xytext=(0, 10), textcoords='offset points')
+            
+    
+            st.pyplot(fig)
+
+        # print("percentage_table.columns")
+        # print(percentage_table.columns)
+        # print("percentage_table.index")
+        # print(percentage_table.index)
+        # print("percentage_table.index")
+        # print(percentage_table)
+        # ce = np.array(percentage_table.columns)
+        # g = sns.FacetGrid(percentage_table, col=ce[:,np.newaxis], col_wrap=5)
+        # g.map_dataframe(sns.barplot, x=percentage_table.index, y=y_axis)
+        # st.pyplot(g.fig)
+        
 
 
-# 3.2 '''If there is one single-select and one multi-select column ''' ----------------------------------
+    # 3.2 '''If there is one single-select and one multi-select column ''' ----------------------------------
     if ((x_axis_is_multi == True) and (y_axis_is_multi == False)) or ((x_axis_is_multi == False) and (y_axis_is_multi == True)):
         if (x_axis_is_multi == True):
             multi_selected_col = x_axis
@@ -230,7 +253,7 @@ if len(x_axis) > 0 and len(y_axis) > 0:
             multi_selected_col = y_axis
             single_selected_col = x_axis
 
-    # Select relevant columns, including popular programming languages
+        # Select relevant columns, including popular programming languages
         multi_selected_columns = [col for col in datacomb.columns if multi_selected_col in col]
 
         df_salary_exp = datacomb[['year', single_selected_col] + multi_selected_columns]
@@ -257,7 +280,6 @@ if len(x_axis) > 0 and len(y_axis) > 0:
         df_salary_exp_heatmap_data_1 = df_salary_exp_heatmap_data.loc[sort_pivot_table_row(df_salary_exp_heatmap_data), sort_pivot_table_col(df_salary_exp_heatmap_data)]\
 
         fig, ax = plt.subplots(figsize=(20, 12))
-        # sns.heatmap(df_salary_exp_heatmap_data_1, annot=True, fmt='d', cmap=cmap, cbar=True, xticklabels=salary_order, yticklabels=job_experience_order)
         sns.heatmap(df_salary_exp_heatmap_data_1, annot=True, fmt='d', cmap=cmap, cbar=True, xticklabels = sort_pivot_table_col(df_salary_exp_heatmap_data), yticklabels=sort_pivot_table_row(df_salary_exp_heatmap_data))
                                                                                                                             
         plt.xlabel(x_axis)
@@ -266,4 +288,20 @@ if len(x_axis) > 0 and len(y_axis) > 0:
         plt.xticks(rotation=90)
         plt.tight_layout()
         
-        st.pyplot()
+        st.pyplot(fig)
+        
+        total_counts = df_salary_exp_heatmap_data_1.sum(axis=1)
+        percentage_table = df_salary_exp_heatmap_data_1.div(total_counts, axis=0) * 100
+        for column in percentage_table.columns:
+            fig, ax = plt.subplots(figsize=(20, 12))
+            plt.bar(percentage_table.index, percentage_table[column])
+            plt.xlabel(y_axis)
+            plt.ylabel('Percentage')
+            plt.title(f'{y_axis} Distribution for {column}')
+            plt.xticks(rotation=45)  # Rotate x-axis labels 
+            plt.tight_layout()
+            
+            for p in ax.patches:
+                ax.annotate(str(round(p.get_height(), 2)), (p.get_x() + p.get_width() / 2., p.get_height()), ha='center', va='center', xytext=(0, 10), textcoords='offset points')
+            
+            st.pyplot(fig)
