@@ -1,5 +1,5 @@
 # Milestone 1.2
-
+# Milestone 1.2 with single-multi and single-single selection
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -13,20 +13,17 @@ cmap = mcolors.LinearSegmentedColormap.from_list(
 [(0, 'white'), (0.5, 'blue'), (1, 'red')])
 # =======================================================
 
-
-st.set_option('deprecation.showPyplotGlobalUse', False)
-
 datacomb = pd.read_csv("https://raw.githubusercontent.com/jeffdarmawan/it5006-team-16/main/data_allthreeyears_combined.csv")
 datacomb = datacomb.rename(columns={'Gender - Selected Choice': 'Gender', 'Job_title - Selected Choice': 'Job_Title'})
-# sea_countries = ["Brunei","Cambodia","East Timor","Indonesia","Laos","Malaysia","Myanmar","Philippines","Singapore","Thailand","Vietnam"]
-datacomb = datacomb[(datacomb['Location']=='Indonesia') | (datacomb['Location']=='Malaysia') | (datacomb['Location']=='Philippines') | (datacomb['Location']=='Singapore') | (datacomb['Location']=='Thailand')]
-# print(datacomb.head())  # Check the first few rows of the loaded data
+# Southeast Asia countries
+# source: https://en.wikipedia.org/wiki/Southeast_Asia
+sea_countries = ["Brunei","Cambodia","East Timor","Indonesia","Laos","Malaysia","Myanmar","Philippines","Singapore","Thailand","Vietnam"]
+datacomb = datacomb[datacomb['Location'].isin(sea_countries)]
 
 # cleaning some columns
 datacomb['Job_Salary'].replace('300,000-500,000', '300,000-499,999', inplace = True)
 datacomb['Coding Experience (in years)'].replace('1-2 years','1-3 years', inplace = True)
 datacomb = datacomb.rename(columns={'Gender - Selected Choice': 'Gender', 'Job_title - Selected Choice': 'Job_Title'})
-
 
 
 # 1.'''Identifying Multi-Select Columns''' ----------------------------------
@@ -46,16 +43,24 @@ for col in datacomb.columns:
     if " - " not in col and col != 'year' and col != 'Time spent on survey':
         single_select_cols.add(col)
 
-'''Streamlit app----------------------------------------------------------------'''
+# 3. Import ordinal data encoding
+ord_encodings = pd.read_csv('ordinal_encodings.csv')
+included_columns = ['Age', 'Education level_attainedOrGGtoAttain', 'Coding Experience (in years)', 'Years in ML', 
+                    'Job_Salary', 'Money Spent on ML/Cloud Computing', 'Times used TPU']
+nominal_features_order_dict = {}
+for col in included_columns:
+    nominal_features_order_dict[col] = dict(zip(ord_encodings[col], ord_encodings[col+'_encoded']))
+
+print(nominal_features_order_dict)
 
 st.title('Milestone 1.2')
-st.header('Filtered Data and Plot based on SEA countries (Indonesia, Malaysia, Philippines, Singapore, Thailand)')
+st.header('Filtered Data and Plot based on SEA countries')
 
 # Sidebar filters
 st.sidebar.header('Select Columns to Display')
 
-# selected_column_1 are multi-select columns
-selected_column_1 = st.sidebar.selectbox('Select Columns',['Job_Salary','Job_JobScope','Coding Experience (in years)',
+# x_axis are multi-select columns
+x_axis = st.sidebar.selectbox('X-axis',['Job_Salary','Job_JobScope','Coding Experience (in years)',
  'Learning platforms tried',
  'Popular BI tool brands',
  'Popular Cloud Computing Platform Brand',
@@ -76,19 +81,17 @@ selected_column_1 = st.sidebar.selectbox('Select Columns',['Job_Salary','Job_Job
  'Education level_attainedOrGGtoAttain',
  'Gender',
  'Job_EmployerUsingML?',
- 'Job_No.OfDSTeamMember',
  'Job_Title',
  'Location',
  'Money Spent on ML/Cloud Computing',
  'Times used TPU',
  'Years in ML'])
 
-# selected_column_2 are single-select columns
-selected_column_2 = st.sidebar.selectbox('Select Columns',['Coding Experience (in years)','Age','Job_Salary', 
+# y_axis are single-select columns
+y_axis = st.sidebar.selectbox('Y-axis',['Coding Experience (in years)','Age','Job_Salary', 
  'Education level_attainedOrGGtoAttain',
  'Gender',
  'Job_EmployerUsingML?',
- 'Job_No.OfDSTeamMember',
  'Job_Title',
  'Location',
  'Money Spent on ML/Cloud Computing',
@@ -98,34 +101,34 @@ selected_column_2 = st.sidebar.selectbox('Select Columns',['Coding Experience (i
 # ''' For sorting of heatmap's axis for ordinal features'''------------------------------------
 
 # column order dictionary for ordinal features-----------------
-nominal_features_order_dict = {'Job_Salary': {'$0-999':1,
-'1,000-1,999':2,\
-'2,000-2,999':3,\
-'3,000-3,999':4,\
-'4,000-4,999':5,\
-'5,000-7,499':6,\
-'7,500-9,999':7,\
-'10,000-14,999':8,\
-'15,000-19,999':9,\
-'20,000-24,999':10,\
-'25,000-29,999':11,\
-'30,000-39,999':12,\
-'40,000-49,999':13,\
-'50,000-59,999':14,\
-'60,000-69,999':15,\
-'70,000-79,999':16,\
-'80,000-89,999':17,\
-'90,000-99,999':18,\
-'100,000-124,999':19,\
-'125,000-149,999':20,\
-'150,000-199,999':21,\
-'200,000-249,999':22,\
-'250,000-299,999':23,\
-'300,000-499,999':24,\
-'$500,000-999,999':25,\
-'> $500,000':26,\
-'>$1,000,000':27},\
-'Coding Experience (in years)': {'I have never written code':1,'< 1 years':2, '1-3 years':3, '3-5 years':4, '5-10 years':5, '10-20 years':6,'20+ years':7}}
+# nominal_features_order_dict = {'Job_Salary': {'$0-999':1,
+# '1,000-1,999':2,\
+# '2,000-2,999':3,\
+# '3,000-3,999':4,\
+# '4,000-4,999':5,\
+# '5,000-7,499':6,\
+# '7,500-9,999':7,\
+# '10,000-14,999':8,\
+# '15,000-19,999':9,\
+# '20,000-24,999':10,\
+# '25,000-29,999':11,\
+# '30,000-39,999':12,\
+# '40,000-49,999':13,\
+# '50,000-59,999':14,\
+# '60,000-69,999':15,\
+# '70,000-79,999':16,\
+# '80,000-89,999':17,\
+# '90,000-99,999':18,\
+# '100,000-124,999':19,\
+# '125,000-149,999':20,\
+# '150,000-199,999':21,\
+# '200,000-249,999':22,\
+# '250,000-299,999':23,\
+# '300,000-499,999':24,\
+# '$500,000-999,999':25,\
+# '> $500,000':26,\
+# '>$1,000,000':27},\
+# 'Coding Experience (in years)': {'I have never written code':1,'< 1 years':2, '1-3 years':3, '3-5 years':4, '5-10 years':5, '10-20 years':6,'20+ years':7}}
 # =========================================================
 
 is_row_select_col_2_ordinal = False
@@ -133,15 +136,13 @@ is_col_select_col_1_ordinal = False
 col_order_dict = {}
 row_order_dict = {}
 
-if selected_column_1 in nominal_features_order_dict.keys():
+if x_axis in nominal_features_order_dict.keys():
     is_col_select_col_1_ordinal = True
-    col_order_dict = nominal_features_order_dict[selected_column_1]
-    st.write(col_order_dict)
+    col_order_dict = nominal_features_order_dict[x_axis]
 
-if selected_column_2 in nominal_features_order_dict.keys():
+if y_axis in nominal_features_order_dict.keys():
     is_row_select_col_2_ordinal = True
-    row_order_dict = nominal_features_order_dict[selected_column_2]
-    st.write(row_order_dict)
+    row_order_dict = nominal_features_order_dict[y_axis]
 
 def sort_pivot_table_row(pivot_table):
     if is_row_select_col_2_ordinal:
@@ -174,31 +175,31 @@ def sort_pivot_table_col(pivot_table):
 # ==================================================================================================
 
 # check if the selected options are multi-select columns
-selected_column_1_is_multi = False
-selected_column_2_is_multi = False
+x_axis_is_multi = False
+y_axis_is_multi = False
 
-if selected_column_1 in multi_select_cols:
-    selected_column_1_is_multi = True
+if x_axis in multi_select_cols:
+    x_axis_is_multi = True
 
-if selected_column_2 in multi_select_cols:
-    selected_column_2_is_multi = True
+if y_axis in multi_select_cols:
+    y_axis_is_multi = True
 
 # check if the selected options are ordinal columns
 lst_of_ordinal_col_names = ['Age', 'Education level_attainedOrGGtoAttain', 'Coding Experience (in years)', 'Years in ML','Job_EmployerUsingML?','Job_Salary', 'Money Spent on ML/Cloud Computing', 'Times used TPU']
 
-selected_column_1_is_ordinal = False
-selected_column_2_is_ordinal = False
+x_axis_is_ordinal = False
+y_axis_is_ordinal = False
 
-if selected_column_1 in lst_of_ordinal_col_names:
-    selected_column_1_is_ordinal = True
+if x_axis in lst_of_ordinal_col_names:
+    x_axis_is_ordinal = True
 
-if selected_column_2 in lst_of_ordinal_col_names:
-    selected_column_2_is_ordinal = True
+if y_axis in lst_of_ordinal_col_names:
+    y_axis_is_ordinal = True
 
 
 # Create checkboxes in the sidebar
 st.sidebar.title('Select the year(s) of interest:')
-year2020 = st.sidebar.checkbox('Year 2020', value=False)
+year2020 = st.sidebar.checkbox('Year 2020', value=True)
 year2021 = st.sidebar.checkbox('Year 2021', value=True)
 year2022 = st.sidebar.checkbox('Year 2022', value=True)
 
@@ -210,34 +211,34 @@ if year2021:
 if year2022:
     selected_years.append(2022)
 
-print(selected_column_1)
-print(selected_column_2)
+print(x_axis)
+print(y_axis)
 
 # Altering the dataframe based on the selection made by the user
 # (ref) df_salary_exp = datacomb[['year','Job_Salary', 'Coding Experience (in years)','Location']]
 # (ref) df_salary_exp = df_salary_exp.dropna(subset=['year','Job_Salary', 'Coding Experience (in years)'], how = 'any')
-st.write(datacomb.head(2))
+# st.write(datacomb.head(2))
 
 # 3. '''If there are 2 selected_columns ''' ----------------------------------
-if len(selected_column_1) > 0 and len(selected_column_2) > 0:
+if len(x_axis) > 0 and len(y_axis) > 0:
 
-# 3. '''If both are single-select columns ''' ----------------------------------
-    if ((selected_column_1_is_multi == False) and (selected_column_2_is_multi == False)):
+# 3.1 '''If both are single-select columns ''' ----------------------------------
+    if ((x_axis_is_multi == False) and (y_axis_is_multi == False)):
 
-        df_salary_exp = datacomb[['year',selected_column_1, selected_column_2,'Location']]
+        df_salary_exp = datacomb[['year',x_axis, y_axis,'Location']]
 
-        df_salary_exp = df_salary_exp.dropna(subset=['year',selected_column_1, selected_column_2], how = 'any')
+        df_salary_exp = df_salary_exp.dropna(subset=['year',x_axis, y_axis], how = 'any')
 
         # Altering the dataframe to only consider the selected_years
         df_salary_exp = df_salary_exp[df_salary_exp['year'].isin(selected_years)]
-        st.write(df_salary_exp)
-        # the code below shows a dataframe with 'selected_column_1' and 'selected_column_2'
+        
+        # the code below shows a dataframe with 'x_axis' and 'y_axis'
         # (ref) df_salary_exp_count_data = df_salary_exp.groupby(['Coding Experience (in years)', 'Job_Salary']).size().reset_index(name='count')
-        df_salary_exp_count_data = df_salary_exp.groupby([selected_column_2, selected_column_1]).size().reset_index(name='count')
+        df_salary_exp_count_data = df_salary_exp.groupby([y_axis, x_axis]).size().reset_index(name='count')
 
         # turn the dataframe above into a pivot table for plotting on heatmap
         # (ref) df_salary_exp_heatmap_data = df_salary_exp_count_data.pivot_table(index='Coding Experience (in years)', columns='Job_Salary', values='count', fill_value=0)
-        df_salary_exp_heatmap_data = df_salary_exp_count_data.pivot_table(index = selected_column_2, columns = selected_column_1, values='count', fill_value=0)
+        df_salary_exp_heatmap_data = df_salary_exp_count_data.pivot_table(index = y_axis, columns = x_axis, values='count', fill_value=0)
         # print(df_salary_exp_heatmap_data)
 
         df_salary_exp_heatmap_data_1 = df_salary_exp_heatmap_data.loc[sort_pivot_table_row(df_salary_exp_heatmap_data), sort_pivot_table_col(df_salary_exp_heatmap_data)]
@@ -247,27 +248,64 @@ if len(selected_column_1) > 0 and len(selected_column_2) > 0:
         # sns.heatmap(df_salary_exp_heatmap_data_1, annot=True, fmt='d', cmap=cmap, cbar=True, xticklabels=salary_order, yticklabels=job_experience_order)
         sns.heatmap(df_salary_exp_heatmap_data_1, annot=True, fmt='d', cmap=cmap, cbar=True, xticklabels = sort_pivot_table_col(df_salary_exp_heatmap_data), yticklabels=sort_pivot_table_row(df_salary_exp_heatmap_data))
                                                                                                                             
-        plt.xlabel('Job Salary')
-        plt.ylabel('Coding Experience (in years)')
-        plt.title('Heatmap: Job Salary vs. Coding Experience (Count)')
+        plt.xlabel(x_axis)
+        plt.ylabel(y_axis)
+        plt.title('Heatmap: '+ x_axis +' vs. ' + y_axis +'(Count)')
         plt.xticks(rotation=90)
         plt.tight_layout()
         
         st.pyplot()
 
 
-# # Filter the DataFrame based on selected years
+# 3.2 '''If there is one single-select and one multi-select column ''' ----------------------------------
+    if ((x_axis_is_multi == True) and (y_axis_is_multi == False)) or ((x_axis_is_multi == False) and (y_axis_is_multi == True)):
+        if (x_axis_is_multi == True):
+            multi_selected_col = x_axis
+            single_selected_col = y_axis
+            
+        if (y_axis_is_multi == True):
+            multi_selected_col = y_axis
+            single_selected_col = x_axis
 
+    # Select relevant columns, including popular programming languages
+        multi_selected_columns = [col for col in datacomb.columns if multi_selected_col in col]
 
+        df_salary_exp = datacomb[['year', single_selected_col] + multi_selected_columns]
 
+        # Drop rows with missing values in any of the multi_selected_columns (programming language) columns
+        df_salary_exp = df_salary_exp.dropna(subset= multi_selected_columns, how='all')
+        df_salary_exp = df_salary_exp.dropna(subset= [single_selected_col], how='any')
 
-# # 3. '''If there is one single-select and one multi-select column ''' ----------------------------------
-# if ((selected_column_1_is_multi == True) and (selected_column_2_is_multi == False)) or ((selected_column_1_is_multi == False) and (selected_column_2_is_multi == True)):
-   
-#     if (selected_column_1_is_multi == True):
-#         multi_selected_col = selected_column_1
-#         single_selected_col = selected_column_2
+        cols_to_be_unpivoted = [col for col in df_salary_exp.columns if multi_selected_col in col]
+
+        # (ref) unpivoted_df_salary_exp = pd.melt(df_salary_exp, id_vars = 'Coding Experience (in years)', value_vars = cols_to_be_unpivoted, var_name = 'Programming Language', value_name='Knows Language?')
+        unpivoted_df_salary_exp = pd.melt(df_salary_exp, id_vars = single_selected_col, value_vars = cols_to_be_unpivoted, \
+                                        var_name = 'Unpivoted Multi-Select Col', value_name='True for Unpivoted Multi-Select Col?')
+
+        # (ref) unpivoted_df_salary_exp = unpivoted_df_salary_exp[unpivoted_df_salary_exp['Knows Language?'].notna()]
+        unpivoted_df_salary_exp = unpivoted_df_salary_exp[unpivoted_df_salary_exp['True for Unpivoted Multi-Select Col?'].notna()]
+
+        # (ref) unpivoted_df_salary_exp = unpivoted_df_salary_exp.drop(columns=['Knows Language?'])
+        unpivoted_df_salary_exp = unpivoted_df_salary_exp.drop(columns=['True for Unpivoted Multi-Select Col?'])
+
+        # (ref) df_salary_count_data = unpivoted_df_salary_exp.groupby(['Coding Experience (in years)', 'Programming Language']).size().reset_index(name='count')
+        df_salary_count_data = unpivoted_df_salary_exp.groupby([single_selected_col, 'Unpivoted Multi-Select Col']).size().reset_index(name='count')
+
+        # generate pivot table for heatmap
+        # (ref) df_salary_exp_heatmap_data = df_salary_count_data.pivot_table(index='Coding Experience (in years)', columns='Programming Language', values='count', fill_value=0)
+        df_salary_exp_heatmap_data = df_salary_count_data.pivot_table(index=single_selected_col, columns='Unpivoted Multi-Select Col', values='count', fill_value=0)
+
+        # sort the pivot table if there are ordinal features in the pivot table, before plotting it on the heatmap
+        df_salary_exp_heatmap_data_1 = df_salary_exp_heatmap_data.loc[sort_pivot_table_row(df_salary_exp_heatmap_data), sort_pivot_table_col(df_salary_exp_heatmap_data)]\
+
+        fig, ax = plt.subplots(figsize=(20, 12))
+        # sns.heatmap(df_salary_exp_heatmap_data_1, annot=True, fmt='d', cmap=cmap, cbar=True, xticklabels=salary_order, yticklabels=job_experience_order)
+        sns.heatmap(df_salary_exp_heatmap_data_1, annot=True, fmt='d', cmap=cmap, cbar=True, xticklabels = sort_pivot_table_col(df_salary_exp_heatmap_data), yticklabels=sort_pivot_table_row(df_salary_exp_heatmap_data))
+                                                                                                                            
+        plt.xlabel(x_axis)
+        plt.ylabel(y_axis)
+        plt.title('Heatmap: ' + x_axis + ' vs. '+y_axis+'(Count)')
+        plt.xticks(rotation=90)
+        plt.tight_layout()
         
-#     if (selected_column_2_is_multi == True):
-#         multi_selected_col = selected_column_2
-#         single_selected_col = selected_column_1
+        st.pyplot()
