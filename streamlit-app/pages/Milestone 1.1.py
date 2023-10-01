@@ -12,7 +12,11 @@ df.drop(columns=['Unnamed: 0'], inplace=True)
 sea_countries = ["Brunei","Cambodia","East Timor","Indonesia","Laos","Malaysia","Myanmar","Philippines","Singapore","Thailand","Vietnam"]
 
 # print(df['Job_Salary'].unique())
-df = df[df['Country'].isin(sea_countries)]
+# df = df[df['Country'].isin(sea_countries)]
+
+print(df[df['Country'].isin(sea_countries)].shape)
+print(df[df['Gender'].isin(['Woman'])].shape)
+df = df[df['Gender'].isin(['Man', 'Woman'])]
 
 # Streamlit app
 st.title('')
@@ -53,7 +57,7 @@ if len(selected_column) > 0:
 if not count_data.empty:
     fig, ax = plt.subplots(1,1)
 
-    sns.barplot(ax=ax, x=selected_column, y="percentage", hue="Year", data=count_data)
+    sns.barplot(ax=ax, x=selected_column, y="count", hue="Year", data=count_data)
 
     # Set labels and title (customize as needed)
     plt.xlabel("Age Group")
