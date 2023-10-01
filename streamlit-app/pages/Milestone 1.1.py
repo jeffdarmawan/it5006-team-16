@@ -126,7 +126,7 @@ if len(selected_column) > 0:
 
     
     
- # 3.2. '''Plotting of Multi-Select Columns'''
+    # 3.2. '''Plotting of Multi-Select Columns'''
     if i in single_select_cols:
         single_cols_to_select_df = datacomb[['year',i]]
         
