@@ -6,7 +6,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 datacomb = pd.read_csv("data_allthreeyears_combined.csv")
-print(datacomb.shape)
 datacomb = datacomb.rename(columns={'Gender - Selected Choice': 'Gender', 'Job_title - Selected Choice': 'Job_Title'})
 # Southeast Asia countries
 # source: https://en.wikipedia.org/wiki/Southeast_Asia

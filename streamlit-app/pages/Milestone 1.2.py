@@ -196,7 +196,6 @@ if len(x_axis) > 0 and len(y_axis) > 0:
 
         # turn the dataframe above into a pivot table for plotting on heatmap
         df_salary_exp_heatmap_data = df_salary_exp_count_data.pivot_table(index = y_axis, columns = x_axis, values='count', fill_value=0)
-        # print(df_salary_exp_heatmap_data)
 
         df_salary_exp_heatmap_data_1 = df_salary_exp_heatmap_data.loc[sort_pivot_table_row(df_salary_exp_heatmap_data), sort_pivot_table_col(df_salary_exp_heatmap_data)]
 
@@ -226,7 +225,6 @@ if len(x_axis) > 0 and len(y_axis) > 0:
             
             for p in ax.patches:
                 ax.annotate(str(round(p.get_height(), 2)), (p.get_x() + p.get_width() / 2., p.get_height()), ha='center', va='center', xytext=(0, 10), textcoords='offset points')
-            
     
             st.pyplot(fig)
 
