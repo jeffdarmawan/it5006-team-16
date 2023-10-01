@@ -228,19 +228,6 @@ if len(x_axis) > 0 and len(y_axis) > 0:
     
             st.pyplot(fig)
 
-        # print("percentage_table.columns")
-        # print(percentage_table.columns)
-        # print("percentage_table.index")
-        # print(percentage_table.index)
-        # print("percentage_table.index")
-        # print(percentage_table)
-        # ce = np.array(percentage_table.columns)
-        # g = sns.FacetGrid(percentage_table, col=ce[:,np.newaxis], col_wrap=5)
-        # g.map_dataframe(sns.barplot, x=percentage_table.index, y=y_axis)
-        # st.pyplot(g.fig)
-        
-
-
     # 3.2 '''If there is one single-select and one multi-select column ''' ----------------------------------
     if ((x_axis_is_multi == True) and (y_axis_is_multi == False)) or ((x_axis_is_multi == False) and (y_axis_is_multi == True)):
         if (x_axis_is_multi == True):
