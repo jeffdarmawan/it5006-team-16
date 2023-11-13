@@ -58,7 +58,8 @@ datacomb_new.insert(len(datacomb_new.columns), 'Job_title - Selected Choice', Jo
 cols_to_drop = ['Job_No.OfDSTeamMember', 'Job_EmployerUsingML?','Money Spent on ML/Cloud Computing','Times used TPU', 'Job_title - Selected Choice']
 datacomb_new_wo_Jtitle = datacomb_new.drop(cols_to_drop, axis = 1)
 filtered_non_binary_cols = [item for item in non_binary_cols if item not in cols_to_drop]
-#print(datacomb_new_wo_Jtitle.columns)
+
+
 encoded_df = pd.get_dummies(datacomb_new_wo_Jtitle, columns = filtered_non_binary_cols)
 encoded_df.drop('Age_70+', axis = 1, inplace = True) # to remove multi-colinearity
 
@@ -134,34 +135,53 @@ singleSelectQns = Datalist.SINGLE.value
 def get_recommendations(model, userInputs):
     """return the model prediction based on user input"""
     return model.predict(userInputs)
-    
+
+headers = list(datacomb_new_wo_Jtitle.columns) # used to encoding user input
+
 @st.cache_data
-def encodeUserInput(userinput, columns=filtered_non_binary_cols):
+def encodeUserInput(userinput, headers=headers, columns=filtered_non_binary_cols):
     """encode the user data to be passed into the random forest model """
-    encoded_df = pd.get_dummies(userinput, columns)
+    single, multi = userinput #unpack the userinput
+    currentCols = list(single.keys() ) + list(multi.keys())
+    emptyCols = list(set(headers) - set(currentCols)) # cols that are not present based on the user selected ans, will be set to 0 as they are the binary cols
+    overallAns = list(single.values()) + list(multi.values())
+    for i in emptyCols:
+        overallAns.append(0) # set these feature as 0 
+    overallHeaders = currentCols + emptyCols
+    overallDF = pd.DataFrame([overallAns], columns=overallHeaders) 
+    print(f"DEBUGGGGG: len of overallheaders : {len(overallHeaders)}   ,len of overallAns : {len(overallAns)} ,len of columns : {len(columns)}       ")
+    encoded_df = pd.get_dummies(overallDF, columns)
     return encoded_df
 
 
 def create_questionnaire(questions_answers):
     """A function that create a list of questions and store the user input value"""
-    answerList = []
+    singleSelection = {}
+    multiList = {}
     
     for question, answer_options in questions_answers.items():
         if question in singleSelectQns:
-            selected_answer = st.selectbox(question, answer_options, index=None)
-            answerList.append(selected_answer)
+            selected_answer = st.selectbox(question, answer_options)
+            singleSelection[question] = selected_answer 
+            #answerList.append(selected_answer) # for single select, do not append the question as it does not have multi cols
+            print("Answer is :",selected_answer)
+            #answerList.append( "".join(question) + " - "+"".join(selected_answer))
         elif question in multiSelectQns:
             selected_answer = st.multiselect(question, answer_options)
-            answerList.append(selected_answer)
+            print("Multi selected ans is :", selected_answer)
+            multiList[question] = multiSelectQns
+            #multiList.append(selected_answer)
+            # for ans in selected_answer:
+            #     multiList.append( "".join(question) + " - " + "".join(ans)) # the selection will include the 
 
         st.write(f"You selected for '{question}': {selected_answer}")
         st.write("---")  # Add a separator between questions
 
-    return answerList
+    return singleSelection,multiList
 
 # Call the function to create the questionnaire
 userinputs = create_questionnaire(questions_answers)
-print("userinputs: ",userinputs)
+print("len of userinputs: ",len(userinputs))
 
 
 # _________________________ Streamlit UI ____________________________
