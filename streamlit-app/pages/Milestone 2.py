@@ -145,8 +145,8 @@ def encodeUserInput(userinput, headers=headers, columns=filtered_non_binary_cols
     currentCols = list(single.keys() ) + list(multi.keys())
     emptyCols = list(set(headers) - set(currentCols)) # cols that are not present based on the user selected ans, will be set to 0 as they are the binary cols
     #overallAns = list(single.values()) + list(multi.values())
-    compiledAns = list(single.values()) + list(multi.values())
-    overallAns =[1 for i in compiledAns]
+    overallAns = list(single.values()) + [1 for i in list(multi.values())]
+    #overallAns =[1 for i in compiledAns]
     for i in emptyCols:
         overallAns.append(0) # set these feature as 0 
     overallHeaders = currentCols + emptyCols
