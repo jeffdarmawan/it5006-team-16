@@ -150,8 +150,6 @@ def encodeUserInput(userinput, headers=headers, columns=filtered_non_binary_cols
     for i in emptyCols:
         overallAns.append(0) # set these feature as 0 
     overallHeaders = currentCols + emptyCols
-    print("Overall headers: ", overallHeaders)
-    print("Overall ans: ", overallAns)
     overallDF = pd.DataFrame([overallAns], columns=overallHeaders) 
     print(f"DEBUGGGGG: len of overallheaders : {len(overallHeaders)}   ,len of overallAns : {len(overallAns)} ,len of columns : {len(columns)}       ")
     encoded_df = pd.get_dummies(overallDF, columns)
@@ -185,7 +183,6 @@ def create_questionnaire(questions_answers):
 
 # Call the function to create the questionnaire
 userinputs = create_questionnaire(questions_answers)
-print("Userinput: ", userinputs)
 print("len of userinputs: ",len(userinputs))
 
 
