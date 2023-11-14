@@ -131,14 +131,14 @@ multiSelectQns = Datalist.MULTI.value
 singleSelectQns = Datalist.SINGLE.value
 ##############
 
-@st.cache_data
+#@st.cache_data
 def get_recommendations(model, userInputs):
     """return the model prediction based on user input"""
     return model.predict(userInputs)
 
 headers = list(datacomb_new_wo_Jtitle.columns) # used to encoding user input
 
-@st.cache_data
+#@st.cache_data
 def encodeUserInput(userinput, headers=headers, columns=filtered_non_binary_cols):
     """encode the user data to be passed into the random forest model """
     single, multi = userinput #unpack the userinput
