@@ -46,14 +46,17 @@ datacomb_new = datacomb_new.replace({'Job_title - Selected Choice': job_title_di
 Job_title = datacomb_new['Job_title - Selected Choice']
 
 # 3. Preprocessing
+
 # 3.1. Label Binary Columns to 0 and 1
 unique_counts = datacomb_new.nunique(dropna=False)
 binary_cols = unique_counts[unique_counts <= 2].index.tolist()
 non_binary_cols = unique_counts[unique_counts > 2].index.tolist()
 
-datacomb_new[binary_cols] = np.where(datacomb_new[binary_cols].isna(), 0, 1)
+def our_signature_binarizer(df, binary_cols=binary_cols): 
+    df[binary_cols] = np.where(df[binary_cols].isna(), 0, 1)
+    return df
 
-
+datacomb_new = our_signature_binarizer(datacomb_new)
 # 3.2. One-Hot Label Encoding
 
 # remove job title from df before encoding
@@ -62,18 +65,26 @@ datacomb_new_wo_Jtitle = datacomb_new.drop(cols_to_drop, axis = 1)
 filtered_non_binary_cols = [item for item in non_binary_cols if item not in cols_to_drop]
 
 prefinal_columns = datacomb_new_wo_Jtitle.columns
-encoded_df = pd.get_dummies(datacomb_new_wo_Jtitle, columns = filtered_non_binary_cols)
-encoded_df.drop('Age_70+', axis = 1, inplace = True) # to remove multi-colinearity
+
+def our_signature_encoder(df, columns=filtered_non_binary_cols):
+    df = pd.get_dummies(df, columns=columns, prefix_sep=' - ')
+    df = df.drop('Age - 70+', axis = 1) # to remove multi-colinearity
+    return df
+
+encoded_df = our_signature_encoder(datacomb_new_wo_Jtitle)
+
+# 3.3. Pipeline for preprocessing
+# TODO: Pipeline for preprocessing
+# from sklearn.pipeline import FeatureUnion
+# from sklearn.feature
 
 
-# Train test split
+# 4. Train test split
 rng = np.random.RandomState(seed=321)
 X_train, X_test, y_train, y_test = train_test_split( encoded_df, Job_title , test_size=0.20, random_state= rng)
-# Random Forest model building______________________________________
 
 
-
-
+# 5. Random Forest model building______________________________________
 @st.cache_data
 def getRandomForestModel(n_estimators,max_leaf_nodes,n_jobs,X_train,y_train):
     
@@ -146,46 +157,39 @@ def encodeUserInput(userinput, headers=headers, columns=filtered_non_binary_cols
         encode the user data to be passed into the random forest model
     '''
     single, multi = userinput #unpack the userinput
-    # print("single:")
-    # pprint(single)
-    # pprint(single['Learning platforms tried - How well known are the platforms (platforms with good marketing)'])
-    # print("multi:")
-    # pprint(multi)
-    # for col in headers.notin(columns):
-    #     print(col)
-    print(type(multi))
+
     ans = single.copy()
     for q, a in multi.items():
         if len(a) > 0:
             for indv_a in a:
                 ans[q + " - " + indv_a] = indv_a
-        print(q)
-        print(a)
-
-
-    print(ans)
 
     ans_df = pd.DataFrame(ans, index=[0], columns=prefinal_columns)
+    print(ans_df)
+
+    # encode
+    ans_df = our_signature_binarizer(ans_df)
+    ans_df = our_signature_encoder(ans_df)
 
     print(ans_df)
     # === below might not be needed ===
-    currentCols = list(single.keys() ) + list(multi.keys())
-    emptyCols = list(set(headers) - set(currentCols)) # cols that are not present based on the user selected ans, will be set to 0 as they are the binary cols
-    #overallAns = list(single.values()) + list(multi.values())
-    overallAns = list(single.values()) + [1 for i in list(multi.values())]
-    #overallAns =[1 for i in compiledAns]
-    for i in emptyCols:
-        overallAns.append(0) # set these feature as 0 
-    overallHeaders = currentCols + emptyCols
-    # print("Overall headers: ", overallHeaders)
-    # print("Overall ans: ", overallAns)
-    overallDF = pd.DataFrame([overallAns], columns=overallHeaders) 
-    # Open a file in write mode ('w')
-    with open('usercols.txt', 'w') as file:
-        print(*print_all_columns(overallDF.columns),file=file, sep="\n")
-    # print(f"DEBUGGGGG: len of overallheaders : {len(overallHeaders)}   ,len of overallAns : {len(overallAns)} ,len of columns : {len(columns)}       ")
-    encoded_df = pd.get_dummies(overallDF, columns)
-    return encoded_df
+    # currentCols = list(single.keys() ) + list(multi.keys())
+    # emptyCols = list(set(headers) - set(currentCols)) # cols that are not present based on the user selected ans, will be set to 0 as they are the binary cols
+    # #overallAns = list(single.values()) + list(multi.values())
+    # overallAns = list(single.values()) + [1 for i in list(multi.values())]
+    # #overallAns =[1 for i in compiledAns]
+    # for i in emptyCols:
+    #     overallAns.append(0) # set these feature as 0 
+    # overallHeaders = currentCols + emptyCols
+    # # print("Overall headers: ", overallHeaders)
+    # # print("Overall ans: ", overallAns)
+    # overallDF = pd.DataFrame([overallAns], columns=overallHeaders) 
+    # # Open a file in write mode ('w')
+    # with open('usercols.txt', 'w') as file:
+    #     print(*print_all_columns(overallDF.columns),file=file, sep="\n")
+    # # print(f"DEBUGGGGG: len of overallheaders : {len(overallHeaders)}   ,len of overallAns : {len(overallAns)} ,len of columns : {len(columns)}       ")
+    # encoded_df = pd.get_dummies(overallDF, columns)
+    return ans_df
 
 
 def create_questionnaire(questions_answers):
@@ -215,15 +219,11 @@ def create_questionnaire(questions_answers):
 
 # Call the function to create the questionnaire
 userinput = create_questionnaire(questions_answers)
-# print("Userinput: ", userinputs)
-# print("len of userinputs: ",len(userinputs))
-
 
 # _________________________ Streamlit UI ____________________________
 st.title("Job Recommender System")
 
 if st.button("Get Recommendations"):
-    get_recommendations(model=rnd_clf, userInputs=encodeUserInput(userinput))
-    # predictedJobs = 
+    predictedJobs = get_recommendations(model=rnd_clf, userInputs=encodeUserInput(userinput))
     st.write("Recommended Jobs based on your profile:")
-    # st.write(predictedJobs)
+    st.write(predictedJobs)
