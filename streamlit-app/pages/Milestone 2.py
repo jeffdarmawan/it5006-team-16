@@ -1,3 +1,4 @@
+from pprint import pprint
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -9,33 +10,31 @@ from sklearn.metrics import classification_report
 from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score
 
-# import the csv 
+def print_all_columns(a):
+    a = list(a)
+    a.sort()
+    return a
+
+
+# 1. Load data
 @st.cache_data
 def getData(csvfile):
     """get the csv data"""
     data = pd.read_csv(csvfile)
     return data
 datacomb_new = getData('data_allthreeyears_combined_new1.csv')
-# ___________________________________________ Data Pre-processing _________________________________________________________________ 
-categorical_columns = datacomb_new.select_dtypes(include=['object']).columns.tolist()
-datacomb_new = datacomb_new.drop('year', axis = 1) # drop the 'year' column
-unique_counts = datacomb_new.nunique(dropna=False)
-binary_cols = unique_counts[unique_counts <= 2].index.tolist()
-non_binary_cols = unique_counts[unique_counts > 2].index.tolist()
 
 
-# ___________________________________________ Label Binary Columns to 0 and 1 _________________________________________________________________ 
-datacomb_new[binary_cols] = np.where((datacomb_new[binary_cols] != 0) & (~datacomb_new[binary_cols].isna()), 1, 0)
+# 2. Data cleaning
+# 2.1. Drop irrelevant columns
+cols_to_drop = ['year', 'Job_No.OfDSTeamMember', 'Job_EmployerUsingML?','Money Spent on ML/Cloud Computing','Times used TPU']
+datacomb_new = datacomb_new.drop(cols_to_drop, axis = 1)
 
+# 2.2. Drop rows with empty job title and students
 datacomb_new = datacomb_new.dropna(subset = ['Job_title - Selected Choice']) # drop rows with empty job title
-
 datacomb_new = datacomb_new[datacomb_new['Job_title - Selected Choice'] != 'Student']# drop rows with student as job title
-Job_title = datacomb_new.pop('Job_title - Selected Choice')
-datacomb_new.insert(len(datacomb_new.columns), 'Job_title - Selected Choice', Job_title)
 
-
-
-# ______________________________________Dropping cols we think is not associated to the job title___________________________________________________________ 
+# 2.3. Merge redundant job title
 job_title_dict = {
     'Data Analyst (Business, Marketing, Financial, Quantitative, etc)': 'Data Analyst',
     'Product Manager': 'Product/Project/Program Manager',
@@ -43,35 +42,46 @@ job_title_dict = {
     'Program/Project Manager':'Product/Project/Program Manager',
     'Machine Learning Engineer':'Machine Learning/ MLops Engineer'}
 
-def replace_text(cell_value, replacements):
-    if cell_value is not None and not pd.isna(cell_value):
-        # Check if the cell_value is a float, and if so, convert it to a string.
-        if isinstance(cell_value, float):
-            cell_value = str(cell_value)
-        cell_value = replacements.get(cell_value,cell_value)
-    return cell_value
+datacomb_new = datacomb_new.replace({'Job_title - Selected Choice': job_title_dict})
+Job_title = datacomb_new['Job_title - Selected Choice']
 
-datacomb_new['Job_title - Selected Choice'] = datacomb_new['Job_title - Selected Choice'].apply(replace_text, replacements=job_title_dict)
-Job_title = datacomb_new.pop('Job_title - Selected Choice')
-datacomb_new.insert(len(datacomb_new.columns), 'Job_title - Selected Choice', Job_title)
+# 3. Preprocessing
+# 3.1. Label Binary Columns to 0 and 1
+unique_counts = datacomb_new.nunique(dropna=False)
+binary_cols = unique_counts[unique_counts <= 2].index.tolist()
+non_binary_cols = unique_counts[unique_counts > 2].index.tolist()
 
-cols_to_drop = ['Job_No.OfDSTeamMember', 'Job_EmployerUsingML?','Money Spent on ML/Cloud Computing','Times used TPU', 'Job_title - Selected Choice']
+datacomb_new[binary_cols] = np.where(datacomb_new[binary_cols].isna(), 0, 1)
+
+
+# 3.2. One-Hot Label Encoding
+
+# remove job title from df before encoding
+cols_to_drop = ['Job_title - Selected Choice']
 datacomb_new_wo_Jtitle = datacomb_new.drop(cols_to_drop, axis = 1)
 filtered_non_binary_cols = [item for item in non_binary_cols if item not in cols_to_drop]
 
-
+prefinal_columns = datacomb_new_wo_Jtitle.columns
 encoded_df = pd.get_dummies(datacomb_new_wo_Jtitle, columns = filtered_non_binary_cols)
 encoded_df.drop('Age_70+', axis = 1, inplace = True) # to remove multi-colinearity
 
 
-# ______________________________________Random Forest model building______________________________________
-
-
+# Train test split
 rng = np.random.RandomState(seed=321)
 X_train, X_test, y_train, y_test = train_test_split( encoded_df, Job_title , test_size=0.20, random_state= rng)
+# Random Forest model building______________________________________
+
+
+
 
 @st.cache_data
 def getRandomForestModel(n_estimators,max_leaf_nodes,n_jobs,X_train,y_train):
+    
+    # Open a file in write mode ('w')
+    with open('x_train_cols.txt', 'w') as file:
+        # print(type(X_train.columns))
+        print(*print_all_columns(X_train.columns), file=file, sep="\n")
+
     """Initialise a model and fit the training data set
        Return the fitted model which is ready to be used for prediction
     """
@@ -80,32 +90,24 @@ def getRandomForestModel(n_estimators,max_leaf_nodes,n_jobs,X_train,y_train):
     return model
 
 rnd_clf = getRandomForestModel( n_estimators=100, max_leaf_nodes=15, n_jobs=-1, X_train=X_train, y_train=y_train  )
-#rnd_clf = RandomForestClassifier( n_estimators=100, max_leaf_nodes=15, n_jobs=-1 )
-#rnd_clf.fit( X_train, y_train )
-y_pred_rf = rnd_clf.predict( X_test )
-#print( classification_report( y_test, y_pred_rf ))
-print("Xtest is",X_test)
-
-# ______________________________________Hyper parameter tuning______________________________________
-
 
 # ______________________________________Training results______________________________________
-@st.cache_data
-def evaluate(test, pred):
-    print(classification_report( test, pred ))
-    # Calculate precision
-    precision = precision_score(test, pred, average='micro')
+# @st.cache_data
+# def evaluate(test, pred):
+#     print(classification_report( test, pred ))
+#     # Calculate precision
+#     precision = precision_score(test, pred, average='micro')
     
-    # Calculate recall
-    recall = recall_score(test, pred, average='micro')
+#     # Calculate recall
+#     recall = recall_score(test, pred, average='micro')
     
-    print("Precision: ", precision)
-    print("Recall: ", recall)
+#     print("Precision: ", precision)
+#     print("Recall: ", recall)
 
-evaluate( y_test, y_pred_rf )
+# evaluate( y_test, y_pred_rf )
 # ______________________________________Creating Questionaire ______________________________________
 
-from x_testData import Datalist
+from pages.x_testData import Datalist
 data = Datalist.DATA.value
 
 questions,answers = [],[]
@@ -134,14 +136,39 @@ singleSelectQns = Datalist.SINGLE.value
 #@st.cache_data
 def get_recommendations(model, userInputs):
     """return the model prediction based on user input"""
-    return model.predict(userInputs)
+    # return model.predict(userInputs)
 
 headers = list(datacomb_new_wo_Jtitle.columns) # used to encoding user input
 
 #@st.cache_data
 def encodeUserInput(userinput, headers=headers, columns=filtered_non_binary_cols):
-    """encode the user data to be passed into the random forest model """
+    '''
+        encode the user data to be passed into the random forest model
+    '''
     single, multi = userinput #unpack the userinput
+    # print("single:")
+    # pprint(single)
+    # pprint(single['Learning platforms tried - How well known are the platforms (platforms with good marketing)'])
+    # print("multi:")
+    # pprint(multi)
+    # for col in headers.notin(columns):
+    #     print(col)
+    print(type(multi))
+    ans = single.copy()
+    for q, a in multi.items():
+        if len(a) > 0:
+            for indv_a in a:
+                ans[q + " - " + indv_a] = indv_a
+        print(q)
+        print(a)
+
+
+    print(ans)
+
+    ans_df = pd.DataFrame(ans, index=[0], columns=prefinal_columns)
+
+    print(ans_df)
+    # === below might not be needed ===
     currentCols = list(single.keys() ) + list(multi.keys())
     emptyCols = list(set(headers) - set(currentCols)) # cols that are not present based on the user selected ans, will be set to 0 as they are the binary cols
     #overallAns = list(single.values()) + list(multi.values())
@@ -150,10 +177,13 @@ def encodeUserInput(userinput, headers=headers, columns=filtered_non_binary_cols
     for i in emptyCols:
         overallAns.append(0) # set these feature as 0 
     overallHeaders = currentCols + emptyCols
-    print("Overall headers: ", overallHeaders)
-    print("Overall ans: ", overallAns)
+    # print("Overall headers: ", overallHeaders)
+    # print("Overall ans: ", overallAns)
     overallDF = pd.DataFrame([overallAns], columns=overallHeaders) 
-    print(f"DEBUGGGGG: len of overallheaders : {len(overallHeaders)}   ,len of overallAns : {len(overallAns)} ,len of columns : {len(columns)}       ")
+    # Open a file in write mode ('w')
+    with open('usercols.txt', 'w') as file:
+        print(*print_all_columns(overallDF.columns),file=file, sep="\n")
+    # print(f"DEBUGGGGG: len of overallheaders : {len(overallHeaders)}   ,len of overallAns : {len(overallAns)} ,len of columns : {len(columns)}       ")
     encoded_df = pd.get_dummies(overallDF, columns)
     return encoded_df
 
@@ -168,12 +198,12 @@ def create_questionnaire(questions_answers):
             selected_answer = st.selectbox(question, answer_options)
             singleSelection[question] = selected_answer 
             #answerList.append(selected_answer) # for single select, do not append the question as it does not have multi cols
-            print("Answer is :",selected_answer)
+            # print("Answer is :",selected_answer)
             #answerList.append( "".join(question) + " - "+"".join(selected_answer))
         elif question in multiSelectQns:
             selected_answer = st.multiselect(question, answer_options)
-            print("Multi selected ans is :", selected_answer)
-            multiList[question] = multiSelectQns
+            # print("Multi selected ans is :", selected_answer)
+            multiList[question] = selected_answer
             #multiList.append(selected_answer)
             # for ans in selected_answer:
             #     multiList.append( "".join(question) + " - " + "".join(ans)) # the selection will include the 
@@ -181,18 +211,19 @@ def create_questionnaire(questions_answers):
         st.write(f"You selected for '{question}': {selected_answer}")
         st.write("---")  # Add a separator between questions
 
-    return singleSelection,multiList
+    return singleSelection, multiList
 
 # Call the function to create the questionnaire
-userinputs = create_questionnaire(questions_answers)
-print("Userinput: ", userinputs)
-print("len of userinputs: ",len(userinputs))
+userinput = create_questionnaire(questions_answers)
+# print("Userinput: ", userinputs)
+# print("len of userinputs: ",len(userinputs))
 
 
 # _________________________ Streamlit UI ____________________________
 st.title("Job Recommender System")
 
 if st.button("Get Recommendations"):
-    predictedJobs = get_recommendations(model=rnd_clf, userInputs=encodeUserInput(userinputs))
+    get_recommendations(model=rnd_clf, userInputs=encodeUserInput(userinput))
+    # predictedJobs = 
     st.write("Recommended Jobs based on your profile:")
-    st.write(predictedJobs)
+    # st.write(predictedJobs)
