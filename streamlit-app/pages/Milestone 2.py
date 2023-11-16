@@ -198,11 +198,14 @@ def encodeUserInput(userinput, headers=headers, columns=non_binary_cols):
     return ans_df
 
 
-def create_questionnaire(questions_answers):
-    """A function that create a list of questions and store the user input value"""
-    singleSelection = {}
-    multiList = {}
-    
+# _________________________ Streamlit UI ____________________________
+st.title("Job Recommender System")
+
+
+"""A function that create a list of questions and store the user input value"""
+singleSelection = {}
+multiList = {}
+with st.form("questionnaire"):
     for question, answer_options in questions_answers.items():
         if question in singleSelectQns:
             selected_answer = st.selectbox(question, answer_options)
@@ -220,16 +223,12 @@ def create_questionnaire(questions_answers):
 
         st.write(f"You selected for '{question}': {selected_answer}")
         st.write("---")  # Add a separator between questions
+    
+    if st.form_submit_button("Get Recommendations"):
+        predictedJobs = get_recommendations(model=rnd_clf, userInputs=encodeUserInput((singleSelection, multiList)))
+        st.write("Recommended Jobs based on your profile:")
+        st.write(predictedJobs)
 
-    return singleSelection, multiList
 
 # Call the function to create the questionnaire
-userinput = create_questionnaire(questions_answers)
-
-# _________________________ Streamlit UI ____________________________
-st.title("Job Recommender System")
-
-if st.button("Get Recommendations"):
-    predictedJobs = get_recommendations(model=rnd_clf, userInputs=encodeUserInput(userinput))
-    st.write("Recommended Jobs based on your profile:")
-    st.write(predictedJobs)
+# userinput = create_questionnaire(questions_answers)
