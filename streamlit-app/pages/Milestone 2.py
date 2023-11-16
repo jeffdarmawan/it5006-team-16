@@ -10,6 +10,9 @@ from sklearn.metrics import classification_report
 from sklearn.metrics import precision_score
 from sklearn.metrics import recall_score
 
+# local imports
+from src.transformer import FeatureTransformer
+
 def print_all_columns(a):
     a = list(a)
     a.sort()
@@ -45,6 +48,13 @@ job_title_dict = {
 datacomb_new = datacomb_new.replace({'Job_title - Selected Choice': job_title_dict})
 Job_title = datacomb_new['Job_title - Selected Choice']
 
+# remove job title from df before encoding
+cols_to_drop = ['Job_title - Selected Choice']
+datacomb_new_wo_Jtitle = datacomb_new.drop(cols_to_drop, axis = 1)
+
+# strip whitespace
+datacomb_new_wo_Jtitle = datacomb_new_wo_Jtitle.map(lambda x: x.strip() if isinstance(x, str) else x)
+
 # 3. Preprocessing
 
 # 3.1. Label Binary Columns to 0 and 1
@@ -52,26 +62,26 @@ unique_counts = datacomb_new.nunique(dropna=False)
 binary_cols = unique_counts[unique_counts <= 2].index.tolist()
 non_binary_cols = unique_counts[unique_counts > 2].index.tolist()
 
-def our_signature_binarizer(df, binary_cols=binary_cols): 
-    df[binary_cols] = np.where(df[binary_cols].isna(), 0, 1)
-    return df
+# def our_signature_binarizer(df, binary_cols=binary_cols): 
+#     df[binary_cols] = np.where(df[binary_cols].isna(), 0, 1)
+#     return df
 
-datacomb_new = our_signature_binarizer(datacomb_new)
+# datacomb_new = our_signature_binarizer(datacomb_new)
 # 3.2. One-Hot Label Encoding
 
-# remove job title from df before encoding
-cols_to_drop = ['Job_title - Selected Choice']
-datacomb_new_wo_Jtitle = datacomb_new.drop(cols_to_drop, axis = 1)
-filtered_non_binary_cols = [item for item in non_binary_cols if item not in cols_to_drop]
+
+
+feature_transformer = FeatureTransformer(datacomb_new_wo_Jtitle)
+encoded_df = feature_transformer.transform(datacomb_new_wo_Jtitle)
 
 prefinal_columns = datacomb_new_wo_Jtitle.columns
 
-def our_signature_encoder(df, columns=filtered_non_binary_cols):
-    df = pd.get_dummies(df, columns=columns, prefix_sep=' - ')
-    df = df.drop('Age - 70+', axis = 1) # to remove multi-colinearity
-    return df
+# def our_signature_encoder(df, columns=non_binary_cols):
+#     df = pd.get_dummies(df, columns=columns, prefix_sep=' - ')
+#     df = df.drop('Age - 70+', axis = 1) # to remove multi-colinearity
+#     return df
 
-encoded_df = our_signature_encoder(datacomb_new_wo_Jtitle)
+# encoded_df = our_signature_encoder(datacomb_new_wo_Jtitle)
 
 # 3.3. Pipeline for preprocessing
 # TODO: Pipeline for preprocessing
@@ -87,12 +97,6 @@ X_train, X_test, y_train, y_test = train_test_split( encoded_df, Job_title , tes
 # 5. Random Forest model building______________________________________
 @st.cache_data
 def getRandomForestModel(n_estimators,max_leaf_nodes,n_jobs,X_train,y_train):
-    
-    # Open a file in write mode ('w')
-    with open('x_train_cols.txt', 'w') as file:
-        # print(type(X_train.columns))
-        print(*print_all_columns(X_train.columns), file=file, sep="\n")
-
     """Initialise a model and fit the training data set
        Return the fitted model which is ready to be used for prediction
     """
@@ -147,12 +151,12 @@ singleSelectQns = Datalist.SINGLE.value
 #@st.cache_data
 def get_recommendations(model, userInputs):
     """return the model prediction based on user input"""
-    # return model.predict(userInputs)
+    return model.predict(userInputs)
 
 headers = list(datacomb_new_wo_Jtitle.columns) # used to encoding user input
 
 #@st.cache_data
-def encodeUserInput(userinput, headers=headers, columns=filtered_non_binary_cols):
+def encodeUserInput(userinput, headers=headers, columns=non_binary_cols):
     '''
         encode the user data to be passed into the random forest model
     '''
@@ -167,9 +171,11 @@ def encodeUserInput(userinput, headers=headers, columns=filtered_non_binary_cols
     ans_df = pd.DataFrame(ans, index=[0], columns=prefinal_columns)
     print(ans_df)
 
+    ans_df = feature_transformer.transform(ans_df)
+
     # encode
-    ans_df = our_signature_binarizer(ans_df)
-    ans_df = our_signature_encoder(ans_df)
+    # ans_df = our_signature_binarizer(ans_df)
+    # ans_df = our_signature_encoder(ans_df)
 
     print(ans_df)
     # === below might not be needed ===
