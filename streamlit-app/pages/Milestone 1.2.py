@@ -202,7 +202,7 @@ if len(x_axis) > 0 and len(y_axis) > 0:
 
         fig, ax = plt.subplots(figsize=(20, 12))
         # sns.heatmap(df_salary_exp_heatmap_data_1, annot=True, fmt='d', cmap=cmap, cbar=True, xticklabels=salary_order, yticklabels=job_experience_order)
-        sns.heatmap(df_salary_exp_heatmap_data_1, annot=True, fmt='d', cmap=cmap, cbar=True, xticklabels = sort_pivot_table_col(df_salary_exp_heatmap_data), yticklabels=sort_pivot_table_row(df_salary_exp_heatmap_data))
+        sns.heatmap(df_salary_exp_heatmap_data_1, annot=True, cmap=cmap, cbar=True, xticklabels = sort_pivot_table_col(df_salary_exp_heatmap_data), yticklabels=sort_pivot_table_row(df_salary_exp_heatmap_data))
                                                                                                                             
         plt.xlabel(x_axis)
         plt.ylabel(y_axis)
