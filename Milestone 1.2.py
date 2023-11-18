@@ -13,7 +13,7 @@ cmap = mcolors.LinearSegmentedColormap.from_list(
 [(0, 'white'), (0.5, 'blue'), (1, 'red')])
 # =======================================================
 
-datacomb = pd.read_csv("data_allthreeyears_combined_new.csv")
+datacomb = pd.read_csv("data_allthreeyears_combined_new1_exported.csv")
 datacomb = datacomb.rename(columns={'Gender - Selected Choice': 'Gender', 'Job_title - Selected Choice': 'Job_Title'})
 # Southeast Asia countries
 # source: https://en.wikipedia.org/wiki/Southeast_Asia
@@ -214,8 +214,9 @@ if len(x_axis) > 0 and len(y_axis) > 0:
 
         df_salary_exp_heatmap_data_1 = df_salary_exp_heatmap_data.loc[sort_pivot_table_row(df_salary_exp_heatmap_data), sort_pivot_table_col(df_salary_exp_heatmap_data)]
 
+        sns.set(font_scale=2.0)
 
-        fig, ax = plt.subplots(figsize=(20, 40))
+        fig, ax = plt.subplots(figsize=(25, 25))
         # sns.heatmap(df_salary_exp_heatmap_data_1, annot=True, fmt='d', cmap=cmap, cbar=True, xticklabels=salary_order, yticklabels=job_experience_order)
         sns.heatmap(df_salary_exp_heatmap_data_1, annot=True, cmap=cmap, cbar=True, xticklabels = sort_pivot_table_col(df_salary_exp_heatmap_data), yticklabels=sort_pivot_table_row(df_salary_exp_heatmap_data))
                                                                                                                             

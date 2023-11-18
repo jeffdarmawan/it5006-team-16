@@ -117,14 +117,14 @@ if len(selected_column) > 0:
                 feature_counts_df[(year)] = feature_counts_df[(year)].apply(lambda x: x / non_nan_count)
             except:
                 feature_counts_df[(year)] = 0
-
+        
         # Create a Matplotlib figure with the desired figure size
         fig, ax = plt.subplots(figsize=(20, 12))
 
         # Plot the data as a grouped bar chart
         feature_counts_df.plot(kind='bar', stacked=False, ax=ax)
-        plt.xlabel(f'{i}')
-        plt.ylabel('% of respondents')
+        plt.xlabel(f'{i}',fontsize=16)
+        plt.ylabel('% of respondents', fontsize=16)
         plt.title(f'Counts of {i} by {i} and Year')
 
         # Rename the x-axis labels to show only the feature name
@@ -136,6 +136,30 @@ if len(selected_column) > 0:
 
         # Display the Matplotlib figure in Streamlit
         st.pyplot(fig)
+        # (NEW) ====================
+        # Calculating the average across all three years:
+        feature_counts_df['Average'] = feature_counts_df.mean(axis=1)
+        # Extract the desired columns for the table
+        table_data = feature_counts_df[['Average']].reset_index(level =0, drop = True)
+
+        fig, ax = plt.subplots(figsize=(20, 12))
+        
+        # plot this average as bar chart
+        feature_counts_df['Average'].plot(kind='bar', ax=ax)
+        plt.xlabel(f'{i}', fontsize=16)
+        plt.ylabel('Average % of respondents', fontsize=16)
+        plt.title(f'Average Counts of {i} by {i}')
+        # Rename the x-axis labels to show only the feature name
+        new_labels = [label[1] for label in feature_counts_df.index]
+        ax.set_xticklabels(new_labels, rotation=45, horizontalalignment='right')
+
+        for p in ax.patches:
+            ax.annotate(str(round(p.get_height(), 2)), (p.get_x() + p.get_width() / 2., p.get_height()), ha='center', va='center', xytext=(0, 10), textcoords='offset points')
+
+        # Display the Matplotlib figure in Streamlit
+        st.pyplot(fig)
+        st.write('Average Values:')
+        st.table(table_data)# NEW =======
 
     
     
@@ -153,8 +177,8 @@ if len(selected_column) > 0:
         for year in years_available:
             non_nan_count = len(single_cols_to_select_df[single_cols_to_select_df['year'] == year])
             single_col_count_by_yr[(year)] = single_col_count_by_yr[(year)].apply(lambda x: x/non_nan_count)
-    
-    
+
+
         # Increase the figure size
         fig, ax = plt.subplots(figsize=(20, 12))
     
@@ -168,3 +192,33 @@ if len(selected_column) > 0:
             ax.annotate(str(round(p.get_height(), 2)), (p.get_x() + p.get_width() / 2., p.get_height()), ha='center', va='center', xytext=(0, 10), textcoords='offset points')
     
         st.pyplot(fig)
+
+        # (NEW) ====================
+        single_col_count_by_yr['Average'] = single_col_count_by_yr.mean(axis=1) # NEW ======================
+        single_col_count_by_yr = single_col_count_by_yr.sort_values(by='Average', ascending=False) # NEW ======================
+        # Increase the figure size
+        # Increase the figure size
+        fig, ax = plt.subplots(figsize=(20, 12))
+        plt.rcParams.update({'font.size': 14})  # Set the default font size for the figure
+
+        # Plot the data as a bar chart
+        single_col_count_by_yr['Average'].plot(kind='bar', ax=ax)
+        plt.xlabel(f'{i}', fontsize=16)  # Set font size for x-axis label
+        plt.ylabel('Average % of respondents', fontsize=16)  # Set font size for y-axis label
+        plt.title(f'Average % of {i}', fontsize=18)  # Set font size for title
+
+        # Rename the x-axis labels to show only the feature name
+        new_labels = [label[1] for label in single_col_count_by_yr.index]
+        ax.set_xticklabels(new_labels, rotation=45, horizontalalignment='right', fontsize=12)  # Set font size for x-axis tick labels
+
+        for p in ax.patches:
+            ax.annotate(str(round(p.get_height(), 2)), (p.get_x() + p.get_width() / 2., p.get_height()), ha='center', va='center', xytext=(0, 10), textcoords='offset points', fontsize=12)  # Set font size for annotations
+
+        st.pyplot(fig)
+
+        # Extract the desired columns for the table after dropping level 0 index
+        table_data = single_col_count_by_yr[['Average']].reset_index()
+
+        # Display the table with 'new_labels' and 'Average' columns
+        st.write('Average Values:')
+        st.table(table_data)
