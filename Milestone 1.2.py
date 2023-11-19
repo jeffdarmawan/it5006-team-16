@@ -13,29 +13,18 @@ cmap = mcolors.LinearSegmentedColormap.from_list(
 [(0, 'white'), (0.5, 'blue'), (1, 'red')])
 # =======================================================
 
-datacomb = pd.read_csv("data_allthreeyears_combined_new1_exported.csv")
+datacomb = pd.read_csv("data_allthreeyears_combined.csv")
 datacomb = datacomb.rename(columns={'Gender - Selected Choice': 'Gender', 'Job_title - Selected Choice': 'Job_Title'})
 # Southeast Asia countries
 # source: https://en.wikipedia.org/wiki/Southeast_Asia
-# sea_countries = ["Brunei","Cambodia","East Timor","Indonesia","Laos","Malaysia","Myanmar","Philippines","Singapore","Thailand","Vietnam"]
-# datacomb = datacomb[datacomb['Location'].isin(sea_countries)]
+sea_countries = ["Brunei","Cambodia","East Timor","Indonesia","Laos","Malaysia","Myanmar","Philippines","Singapore","Thailand","Vietnam"]
+datacomb = datacomb[datacomb['Location'].isin(sea_countries)]
 
 # cleaning some columns
 datacomb['Job_Salary'].replace('300,000-500,000', '300,000-499,999', inplace = True)
 datacomb['Coding Experience (in years)'].replace('1-2 years','1-3 years', inplace = True)
 datacomb = datacomb.rename(columns={'Gender - Selected Choice': 'Gender', 'Job_title - Selected Choice': 'Job_Title'})
 
-# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# Filter box to select location
-selected_locations = st.multiselect('Select Locations (Optional)', datacomb['Location'].unique())
-if selected_locations:
-    datacomb = datacomb[datacomb['Location'].isin(selected_locations)]
-
-# Filter box to select Job_Title
-selected_job_title = st.multiselect('Select Job Title (Optional)', datacomb['Job_Title'].unique())
-if selected_job_title:
-    datacomb = datacomb[datacomb['Job_Title'].isin(selected_job_title)]
-# ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 # 1.'''Identifying Multi-Select Columns''' ----------------------------------
 
@@ -63,7 +52,7 @@ for col in included_columns:
     nominal_features_order_dict[col] = dict(zip(ord_encodings[col], ord_encodings[col+'_encoded']))
 
 # st.title('Milestone 1.2')
-st.header('Heatmap and the individual plots of each category in the x-axis, with respect to the y-axis')
+st.header('Filtered Data and Plot based on SEA countries')
 
 # Sidebar filters
 st.sidebar.header('Select Columns to Display')
@@ -119,10 +108,6 @@ if x_axis in nominal_features_order_dict.keys():
 if y_axis in nominal_features_order_dict.keys():
     is_row_select_col_2_ordinal = True
     row_order_dict = nominal_features_order_dict[y_axis]
-
-# st.write(row_order_dict)
-# st.write(col_order_dict)
-
 
 def sort_pivot_table_row(pivot_table):
     if is_row_select_col_2_ordinal:
@@ -214,11 +199,10 @@ if len(x_axis) > 0 and len(y_axis) > 0:
 
         df_salary_exp_heatmap_data_1 = df_salary_exp_heatmap_data.loc[sort_pivot_table_row(df_salary_exp_heatmap_data), sort_pivot_table_col(df_salary_exp_heatmap_data)]
 
-        sns.set(font_scale=2.0)
 
-        fig, ax = plt.subplots(figsize=(25, 25))
+        fig, ax = plt.subplots(figsize=(20, 12))
         # sns.heatmap(df_salary_exp_heatmap_data_1, annot=True, fmt='d', cmap=cmap, cbar=True, xticklabels=salary_order, yticklabels=job_experience_order)
-        sns.heatmap(df_salary_exp_heatmap_data_1, annot=True, cmap=cmap, cbar=True, xticklabels = sort_pivot_table_col(df_salary_exp_heatmap_data), yticklabels=sort_pivot_table_row(df_salary_exp_heatmap_data))
+        sns.heatmap(df_salary_exp_heatmap_data_1, annot=True, fmt='d', cmap=cmap, cbar=True, xticklabels = sort_pivot_table_col(df_salary_exp_heatmap_data), yticklabels=sort_pivot_table_row(df_salary_exp_heatmap_data))
                                                                                                                             
         plt.xlabel(x_axis)
         plt.ylabel(y_axis)

@@ -7,7 +7,7 @@ Age,Age_encoded,Education level_attainedOrGGtoAttain,Education level_attainedOrG
 40-44,5,doctoral,5,5-10 years,5,4-5 years,5,$100K to $124.999K,5,"$100,000 or more ($USD)",5,,
 45-49,6,doctorate,6,10-20 years,6,5-10 years,6,$125K to $149.999K,6,,,,
 50-54,7,professional deg,7,20+ years,7,10-20 years,7,$150K to $199.999K,7,,,,
-55-59,8,,,,,20 or more years,3,$200K to $299.999K,8,,,,
+55-59,8,,,,,20 or more years,8,$200K to $299.999K,8,,,,
 60-69,9,,,,,,,$300K to $500K,9,,,,
 70+,10,,,,,,,>$500K,10,,,,
 ,,,,,,,,>$1000K,11,,,,
